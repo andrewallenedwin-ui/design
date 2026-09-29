@@ -1,0 +1,890 @@
+[
+  {
+    "id": "pudhumai-penn",
+    "name_ta": "மூவலூர் ராமாமிர்தம் அம்மையார் புதுமைப் பெண் திட்டம்",
+    "name_en": "Moovalur Ramamirtham Pudhumai Penn Scheme",
+    "category": "students",
+    "category_ta": "மாணவர் & கல்வி",
+    "category_en": "Students & Education",
+    "department_ta": "சமூக நலன் மற்றும் மகளிர் உரிமைத் துறை",
+    "department_en": "Social Welfare and Women Empowerment Department",
+    "benefit_summary_ta": "கல்லூரி படிப்பை முடிக்கும் வரை மாதம் ₹1,000 வங்கிக் கணக்கில் நேரடியாக செலுத்தப்படும்.",
+    "benefit_summary_en": "₹1,000 per month deposited directly into bank account until completion of college degree.",
+    "monetary_value": "₹1,000 / மாதம் (ஆண்டுக்கு ₹12,000)",
+    "monetary_value_en": "₹1,000 / Month (₹12,000/yr)",
+    "badge_ta": "மாதந்தோறும் ₹1,000",
+    "badge_en": "₹1,000 Monthly",
+    "eligibility_rules": {
+      "gender": ["female"],
+      "occupation": ["student"],
+      "student_status": "college",
+      "school_type": "government",
+      "classes_studied": "6th_to_12th_govt",
+      "age_min": 17,
+      "age_max": 25,
+      "max_income": 500000
+    },
+    "eligibility_text_ta": "தமிழ்நாடு அரசுப் பள்ளிகளில் 6 முதல் 12-ஆம் வகுப்பு வரை பயின்று, உயர்கல்வியில் (பட்டப்படிப்பு / பட்டயப்படிப்பு / ஐடிஐ) சேரும் அனைத்து மாணவிகளுக்கும் இத்திட்டம் பொருந்தும்.",
+    "eligibility_text_en": "Open to all female students who studied classes 6 to 12 in Tamil Nadu government schools and enrolled in higher education.",
+    "required_documents_ta": [
+      "ஆதார் அட்டை (Aadhaar Card)",
+      "பள்ளி மாற்றுச் சான்றிதழ் (TC / 6 முதல் 12 வரை அரசுப் பள்ளியில் படித்ததற்கான சான்று)",
+      "கல்லூரி அடையாள அட்டை / சேர்க்கை ரசீது (College ID / Admission Slip)",
+      "மாணவியின் பெயரிலான வங்கிக் கணக்கு புத்தகம் (Bank Passbook)",
+      "10 மற்றும் 12-ஆம் வகுப்பு மதிப்பெண் பட்டியல் (Marksheet)"
+    ],
+    "required_documents_en": [
+      "Aadhaar Card",
+      "Transfer Certificate / Proof of studying 6th to 12th in Govt School",
+      "College Admission Receipt / ID Card",
+      "Bank Passbook in Student's Name",
+      "10th & 12th Marksheets"
+    ],
+    "how_to_apply_ta": "கல்லூரியில் சேரும்போது கல்லூரி முதல்வரிடம் விண்ணப்பிக்கலாம் அல்லது 'பெண் கல்வி' வலைத்தளம் (penkalvi.tn.gov.in) வாயிலாக கல்லூரி மூலமாக பதிவு செய்யப்படும்.",
+    "how_to_apply_en": "Apply through your college nodal officer or via penkalvi.tn.gov.in portal.",
+    "official_url": "https://www.penkalvi.tn.gov.in",
+    "tags": ["female", "college", "girl", "pudhumai penn", "education", "1000"]
+  },
+  {
+    "id": "tamil-pudhalvan",
+    "name_ta": "தமிழ்ப் புதல்வன் திட்டம்",
+    "name_en": "Tamil Pudhalvan Scheme",
+    "category": "students",
+    "category_ta": "மாணவர் & கல்வி",
+    "category_en": "Students & Education",
+    "department_ta": "சமூக நலன் மற்றும் மகளிர் உரிமைத் துறை",
+    "department_en": "Social Welfare Department",
+    "benefit_summary_ta": "அரசுப் பள்ளிகளில் படித்து கல்லூரி பயிலும் மாணவர்களுக்கு மாதம் ₹1,000 உதவித்தொகை.",
+    "benefit_summary_en": "₹1,000 per month financial aid for male students from govt schools pursuing higher education.",
+    "monetary_value": "₹1,000 / மாதம் (ஆண்டுக்கு ₹12,000)",
+    "monetary_value_en": "₹1,000 / Month (₹12,000/yr)",
+    "badge_ta": "மாதந்தோறும் ₹1,000",
+    "badge_en": "₹1,000 Monthly",
+    "eligibility_rules": {
+      "gender": ["male"],
+      "occupation": ["student"],
+      "student_status": "college",
+      "school_type": "government",
+      "classes_studied": "6th_to_12th_govt",
+      "age_min": 17,
+      "age_max": 25,
+      "max_income": 500000
+    },
+    "eligibility_text_ta": "அரசுப் பள்ளிகளில் 6 முதல் 12-ஆம் வகுப்பு வரை படித்து அரசு / அரசு உதவிபெறும் கல்லூரிகளில் படிக்கும் மாணவர்கள்.",
+    "eligibility_text_en": "Boys who studied classes 6 to 12 in TN Govt schools and enrolled in undergraduate / diploma degrees.",
+    "required_documents_ta": [
+      "ஆதார் அட்டை (Aadhaar Card)",
+      "அரசுப் பள்ளி படிப்புச் சான்றிதழ் (Bonafide Certificate 6th-12th)",
+      "கல்லூரி சேர்க்கை அட்டை (College Admission Proof)",
+      "மாணவரின் வங்கிக் கணக்கு புத்தகம் (Bank Account Details)"
+    ],
+    "required_documents_en": [
+      "Aadhaar Card",
+      "Govt School Study Bonafide Certificate (6th-12th)",
+      "College Admission Card",
+      "Student Bank Passbook"
+    ],
+    "how_to_apply_ta": "கல்லூரி நிர்வாகம் மூலம் நேரடியாக போர்ட்டலில் சரிபார்க்கப்பட்டு பதிவு செய்யப்படும்.",
+    "how_to_apply_en": "College nodal officers enroll and verify eligible students directly on the portal.",
+    "official_url": "https://www.tn.gov.in",
+    "tags": ["male", "boy", "college", "tamil pudhalvan", "education", "1000"]
+  },
+  {
+    "id": "magalir-urimai-thogai",
+    "name_ta": "கலைஞர் மகளிர் உரிமைத் திட்டம்",
+    "name_en": "Kalaignar Magalir Urimai Thogai",
+    "category": "women",
+    "category_ta": "மகளிர் நலம்",
+    "category_en": "Women Welfare",
+    "department_ta": "சிறப்புத் திட்ட செயலாக்கத் துறை",
+    "department_en": "Special Programme Implementation Department",
+    "benefit_summary_ta": "குடும்பத் தலைவிகளுக்கு மாதம் ₹1,000 வாழ்வாதார உதவித்தொகை நேரடியாக வங்கியில் வரவு வைக்கப்படுகிறது.",
+    "benefit_summary_en": "₹1,000 monthly basic income entitlement deposited into the bank account of women heads of families.",
+    "monetary_value": "₹1,000 / மாதம் (ஆண்டுக்கு ₹12,000)",
+    "monetary_value_en": "₹1,000 / Month (₹12,000/yr)",
+    "badge_ta": "மாதந்தோறும் ₹1,000",
+    "badge_en": "₹1,000 Monthly",
+    "eligibility_rules": {
+      "gender": ["female"],
+      "age_min": 21,
+      "age_max": 99,
+      "max_income": 250000,
+      "max_land_wet": 5,
+      "max_land_dry": 10,
+      "max_electricity_units": 3600
+    },
+    "eligibility_text_ta": "குடும்பத்தின் ஆண்டு வருமானம் ₹2.5 லட்சத்திற்குள் இருக்க வேண்டும்; 5 ஏக்கர் நஞ்சை அல்லது 10 ஏக்கர் புஞ்சை நிலத்திற்குள் வைத்திருக்க வேண்டும்; 21 வயது பூர்த்தியடைந்த குடும்பத் தலைவி.",
+    "eligibility_text_en": "Woman head of family aged 21+, annual family income below ₹2.5 lakh, wet land below 5 acres or dry land below 10 acres, electricity usage under 3600 units/yr.",
+    "required_documents_ta": [
+      "குடும்ப அட்டை (Ration Smart Card)",
+      "குடும்பத் தலைவியின் ஆதார் அட்டை (Aadhaar Card)",
+      "மின்சார நுகர்வோர் எண் / ரசீது (Electricity Bill Number)",
+      "வங்கி கணக்கு புத்தகம் - ஆதார் இணைக்கப்பட்டது (Bank Passbook linked to Aadhaar)"
+    ],
+    "required_documents_en": [
+      "Ration Card (Smart Card)",
+      "Aadhaar Card of Woman Head",
+      "TANGEDCO Electricity Consumer Number",
+      "Bank Passbook (Aadhaar-seeded)"
+    ],
+    "how_to_apply_ta": "ரேஷன் கடைகளில் நடைபெறும் சிறப்பு முகாம்களில் அல்லது இ-சேவை மையம் மூலம் மேல்முறையீடு செய்யலாம்.",
+    "how_to_apply_en": "Register at e-Sevai centers or special ration shop camps.",
+    "official_url": "https://kmut.tn.gov.in",
+    "tags": ["female", "women", "homemaker", "magalir urimai", "1000", "family"]
+  },
+  {
+    "id": "cmchis-health-insurance",
+    "name_ta": "முதலமைச்சரின் விரிவான மருத்துவக் காப்பீட்டுத் திட்டம் (CMCHIS)",
+    "name_en": "Chief Minister Comprehensive Health Insurance Scheme",
+    "category": "health",
+    "category_ta": "சுகாதாரம் & காப்பீடு",
+    "category_en": "Health & Insurance",
+    "department_ta": "மக்கள் நல்வாழ்வு மற்றும் குடும்ப நலத்துறை",
+    "department_en": "Health and Family Welfare Department",
+    "benefit_summary_ta": "ஆண்டுக்கு குடும்பத்திற்கு ₹5,00,000 வரை கட்டணமில்லா மருத்துவ சிகிச்சை மற்றும் அறுவை சிகிச்சைகள்.",
+    "benefit_summary_en": "Cashless hospitalization and surgical treatment up to ₹5,00,000 per family per year in empanelled hospitals.",
+    "monetary_value": "ஆண்டுக்கு ₹5,00,000 காப்பீடு",
+    "monetary_value_en": "₹5,00,000 Coverage / Year",
+    "badge_ta": "₹5 லட்சம் இலவச சிகிச்சை",
+    "badge_en": "₹5 Lakh Free Treatment",
+    "eligibility_rules": {
+      "max_income": 120000,
+      "resident_state": "Tamil Nadu"
+    },
+    "eligibility_text_ta": "குடும்ப ஆண்டு வருமானம் ₹1,20,000-க்குள் இருக்கும் அனைத்து குடும்பங்களுக்கும் பொருந்தும். ரேஷன் கார்டு உள்ள அனைவரும் தகுதியானவர்கள்.",
+    "eligibility_text_en": "Families with annual income less than ₹1,20,000 holding a valid Tamil Nadu Smart Ration Card.",
+    "required_documents_ta": [
+      "ஸ்மார்ட் ரேஷன் கார்டு (Smart Ration Card)",
+      "வருமானச் சான்றிதழ் (VAO வழங்கிய ₹1.2L-க்குள் வருமான சான்று)",
+      "குடும்ப உறுப்பினர்கள் அனைவரின் ஆதார் அட்டை (All Family Aadhaar Cards)",
+      "குடும்ப புகைப்படம் (Family Passport Size Photo)"
+    ],
+    "required_documents_en": [
+      "Smart Ration Card",
+      "Income Certificate from VAO/Tahsildar (under ₹1.2L)",
+      "Aadhaar cards of all family members",
+      "Family joint photograph"
+    ],
+    "how_to_apply_ta": "மாவட்ட ஆட்சியர் அலுவலகத்தில் உள்ள CMCHIS மையத்தில் அல்லது இ-சேவை மையத்தில் விண்ணப்பித்து உடனடியாக ஸ்மார்ட் கார்டு பெறலாம்.",
+    "how_to_apply_en": "Apply at the District Collectorate CMCHIS counter or e-Sevai centers to receive smart health card.",
+    "official_url": "https://www.cmchistn.com",
+    "tags": ["health", "hospital", "insurance", "cmchis", "medical", "treatment", "500000"]
+  },
+  {
+    "id": "pm-kisan-uzhavan",
+    "name_ta": "பிரதம மந்திரி கிசான் & தமிழ்நாடு உழவர் நலத்திட்டம்",
+    "name_en": "PM-KISAN & TN Farmers Welfare Scheme",
+    "category": "farmers",
+    "category_ta": "விவசாயம் & உழவர்",
+    "category_en": "Farmers & Agriculture",
+    "department_ta": "வேளாண்மை மற்றும் உழவர் நலத்துறை",
+    "department_en": "Agriculture and Farmers Welfare Department",
+    "benefit_summary_ta": "ஆண்டுக்கு ₹6,000 ரொக்க உதவி (3 தவணைகளாக ₹2,000 வீதம்) + இலவச விவசாய மின்சாரம் + உழவன் செயலி மானியங்கள்.",
+    "benefit_summary_en": "₹6,000 financial support per year (₹2,000 in 3 installments) + Free farm electricity + Subsidized seeds & fertilizers.",
+    "monetary_value": "ஆண்டுக்கு ₹6,000 + இலவச மின்சாரம்",
+    "monetary_value_en": "₹6,000/yr + Free Power",
+    "badge_ta": "ஆண்டுக்கு ₹6,000",
+    "badge_en": "₹6,000 Yearly",
+    "eligibility_rules": {
+      "occupation": ["farmer"],
+      "has_agricultural_land": true,
+      "max_land_acres": 15
+    },
+    "eligibility_text_ta": "விவசாய நிலம் சொந்தமாக வைத்துள்ள சிறு, குறு மற்றும் நடுத்தர விவசாயிகள். நில உரிமைக்கான பட்டா சிட்டா இருக்க வேண்டும்.",
+    "eligibility_text_en": "Small and marginal farmers who own cultivable agricultural land with valid Patta/Chitta.",
+    "required_documents_ta": [
+      "ஆதார் அட்டை (Aadhaar Card with mobile link)",
+      "நில ஆவணங்கள் (பட்டா, சிட்டா, அடங்கல் / Patta Chitta)",
+      "வங்கி கணக்கு புத்தகம் (Bank Passbook)",
+      "ரேஷன் அட்டை (Ration Card)"
+    ],
+    "required_documents_en": [
+      "Aadhaar Card linked with mobile number",
+      "Land ownership documents (Patta, Chitta, Adangal)",
+      "Bank Passbook copy",
+      "Smart Ration Card"
+    ],
+    "how_to_apply_ta": "இ-சேவை மையம் அல்லது 'உழவன்' (Uzhavan App) செயலி மற்றும் pmkisan.gov.in மூலம் பதிவு செய்யலாம்.",
+    "how_to_apply_en": "Apply through Uzhavan App, pmkisan.gov.in portal or visit local Agriculture Extension Office.",
+    "official_url": "https://pmkisan.gov.in",
+    "tags": ["farmer", "agriculture", "land", "pm kisan", "uzhavan", "crop"]
+  },
+  {
+    "id": "muthulakshmi-maternity",
+    "name_ta": "டாக்டர் முத்துலட்சுமி ரெட்டி மகப்பேறு நிதி உதவித் திட்டம்",
+    "name_en": "Dr. Muthulakshmi Reddy Maternity Assistance Scheme",
+    "category": "women",
+    "category_ta": "மகளிர் நலம்",
+    "category_en": "Women Welfare",
+    "department_ta": "மக்கள் நல்வாழ்வு மற்றும் குடும்ப நலத்துறை",
+    "department_en": "Health and Family Welfare Department",
+    "benefit_summary_ta": "கர்ப்பிணித் தாய்மார்களுக்கு ₹18,000 நிதி உதவி (5 தவணைகளாக பணம்) மற்றும் ₹4,000 மதிப்புள்ள 2 ஊட்டச்சத்து பெட்டகங்கள்.",
+    "benefit_summary_en": "₹18,000 financial assistance in 5 stages + 2 Amma Nutrition Kits worth ₹4,000 for pregnant mothers.",
+    "monetary_value": "₹18,000 நிதி உதவி + ஊட்டச்சத்து பெட்டகம்",
+    "monetary_value_en": "₹18,000 Aid + Nutrition Kit",
+    "badge_ta": "₹18,000 மகப்பேறு உதவி",
+    "badge_en": "₹18,000 Maternity Aid",
+    "eligibility_rules": {
+      "gender": ["female"],
+      "age_min": 19,
+      "age_max": 40,
+      "max_income": 150000
+    },
+    "eligibility_text_ta": "19 வயது நிரம்பிய ஏழைக் கர்ப்பிணித் தாய்மார்கள். அரசு ஆரம்ப சுகாதார நிலையத்தில் (PHC) கர்ப்பத்தை முன்பதிவு செய்திருக்க வேண்டும் (RCH ID).",
+    "eligibility_text_en": "Poor pregnant women aged 19+ delivering in government hospitals registered with PICME / RCH ID.",
+    "required_documents_ta": [
+      "தாய் சேய் நல அட்டை (RCH ID / PICME Number)",
+      "ஆதார் அட்டை (Aadhaar Card)",
+      "வங்கி கணக்கு புத்தகம் (Bank Passbook)",
+      "குடும்ப அட்டை (Ration Card)"
+    ],
+    "required_documents_en": [
+      "RCH ID / PICME Registration Card",
+      "Aadhaar Card",
+      "Bank Passbook in Mother's Name",
+      "Smart Ration Card"
+    ],
+    "how_to_apply_ta": "கிராம சுகாதார செவிலியரிடம் (VHN) அல்லது ஆரம்ப சுகாதார நிலையத்தில் (PHC) 12 வாரங்களுக்குள் பதிவு செய்ய வேண்டும்.",
+    "how_to_apply_en": "Register within 12 weeks of pregnancy with Village Health Nurse (VHN) or at Primary Health Centre.",
+    "official_url": "https://picme.tn.gov.in",
+    "tags": ["women", "pregnant", "mother", "maternity", "muthulakshmi", "18000"]
+  },
+  {
+    "id": "old-age-pension",
+    "name_ta": "முதியோர் உதவித்தொகை திட்டம் (OAP)",
+    "name_en": "Old Age Pension Scheme (OAP)",
+    "category": "seniors",
+    "category_ta": "மூத்த குடிமக்கள்",
+    "category_en": "Senior Citizens",
+    "department_ta": "வருவாய்த்துறை மற்றும் சமூக பாதுகாப்பு",
+    "department_en": "Revenue and Social Security Department",
+    "benefit_summary_ta": "60 வயதுக்கு மேற்பட்ட ஆதரவற்ற முதியோருக்கு மாதம் ₹1,200 ஓய்வூதியம் + இலவச அரிசி & வேட்டி/சேலை.",
+    "benefit_summary_en": "₹1,200 monthly pension + free rice and annual free Dhoti/Sari for destitute senior citizens.",
+    "monetary_value": "₹1,200 / மாதம்",
+    "monetary_value_en": "₹1,200 / Month",
+    "badge_ta": "மாதம் ₹1,200 ஓய்வூதியம்",
+    "badge_en": "₹1,200 Monthly",
+    "eligibility_rules": {
+      "age_min": 60,
+      "age_max": 120,
+      "max_income": 100000,
+      "destitute_status": true
+    },
+    "eligibility_text_ta": "60 வயது நிரம்பிய, ஆதரவற்ற நிலையில் உள்ள, வேறு எந்த அரசு ஓய்வூதியமும் பெறாத முதியோர்கள்.",
+    "eligibility_text_en": "Destitute elderly citizens aged 60 and above with no regular source of financial support.",
+    "required_documents_ta": [
+      "ஆதார் அட்டை (Aadhaar Card)",
+      "வயது சான்றிதழ் / வாக்காளர் அட்டை (Age Proof / Voter ID)",
+      "வருமானச் சான்றிதழ் (Income Certificate)",
+      "வங்கி கணக்கு புத்தகம் (Bank Passbook)",
+      "குடும்ப அட்டை (Ration Card)"
+    ],
+    "required_documents_en": [
+      "Aadhaar Card",
+      "Age Proof / Voter ID Card",
+      "Income Certificate showing destitute status",
+      "Bank Account Passbook",
+      "Smart Ration Card"
+    ],
+    "how_to_apply_ta": "கிராம நிர்வாக அலுவலர் (VAO) மூலம் விண்ணப்பிக்கலாம் அல்லது இ-சேவை மையத்தில் விண்ணப்பம் செய்யலாம்.",
+    "how_to_apply_en": "Submit application through local VAO or at any e-Sevai centre.",
+    "official_url": "https://www.tnesevai.tn.gov.in",
+    "tags": ["senior", "elderly", "oap", "pension", "60", "destitute"]
+  },
+  {
+    "id": "annal-ambedkar-subsidy",
+    "name_ta": "அண்ணல் அம்பேத்கர் தொழில் முன்னோடிகள் திட்டம் (AABCS)",
+    "name_en": "Annal Ambedkar Business Champions Scheme",
+    "category": "business",
+    "category_ta": "தொழில்முனைவோர்",
+    "category_en": "Entrepreneurs & Business",
+    "department_ta": "குறு, சிறு மற்றும் நடுத்தர தொழில் நிறுவனங்கள் துறை (MSME)",
+    "department_en": "MSME Department Tamil Nadu",
+    "benefit_summary_ta": "புதிய தொழில் தொடங்குவதற்கு 35% மூலதன மானியம் (அதிகபட்சம் ₹35 லட்சம் வரை) மற்றும் 6% வட்டி மானியம்.",
+    "benefit_summary_en": "35% capital subsidy up to ₹35 Lakhs on project cost and 6% interest subvention for establishing enterprises.",
+    "monetary_value": "35% மானியம் (₹35 லட்சம் வரை)",
+    "monetary_value_en": "35% Subsidy (Up to ₹35L)",
+    "badge_ta": "35% மூலதன மானியம்",
+    "badge_en": "35% Subsidy",
+    "eligibility_rules": {
+      "community": ["SC", "ST"],
+      "age_min": 18,
+      "age_max": 55,
+      "occupation": ["self_employed", "unemployed", "business"]
+    },
+    "eligibility_text_ta": "பட்டியலின (SC) மற்றும் பழங்குடியின (ST) வகுப்பைச் சேர்ந்த 18 முதல் 55 வயதுக்குட்பட்ட புதிய தொழில்முனைவோர்.",
+    "eligibility_text_en": "First generation SC / ST entrepreneurs aged between 18 and 55 venturing into manufacturing, service or trade businesses.",
+    "required_documents_ta": [
+      "சாதி சான்றிதழ் (Community Certificate SC/ST)",
+      "ஆதார் அட்டை & பான் அட்டை (Aadhaar & PAN Card)",
+      "தொழில் திட்ட அறிக்கை (Project Profile / DPR)",
+      "கல்வித் தகுதிச் சான்றிதழ் (Educational Certificate)",
+      "வங்கி கணக்கு விவரம் (Bank Account Details)"
+    ],
+    "required_documents_en": [
+      "Community Certificate (SC/ST)",
+      "Aadhaar Card and PAN Card",
+      "Detailed Project Report (DPR)",
+      "Educational Qualification Certificate",
+      "Bank Account statement"
+    ],
+    "how_to_apply_ta": "மாவட்ட தொழில் மையம் (DIC) அல்லது msmeonline.tn.gov.in போர்ட்டல் மூலம் விண்ணப்பிக்கலாம்.",
+    "how_to_apply_en": "Apply through District Industries Centre (DIC) or online at msmeonline.tn.gov.in.",
+    "official_url": "https://msmeonline.tn.gov.in",
+    "tags": ["sc", "st", "business", "subsidy", "msme", "entrepreneur", "loan"]
+  },
+  {
+    "id": "needs-scheme",
+    "name_ta": "புதிய தொழில்முனைவோர் மற்றும் தொழில் நிறுவன மேம்பாட்டுத் திட்டம் (NEEDS)",
+    "name_en": "New Entrepreneur-cum-Enterprise Development Scheme (NEEDS)",
+    "category": "business",
+    "category_ta": "தொழில்முனைவோர்",
+    "category_en": "Entrepreneurs & Business",
+    "department_ta": "குறு, சிறு மற்றும் நடுத்தர தொழில் நிறுவனங்கள் துறை (MSME)",
+    "department_en": "MSME Department",
+    "benefit_summary_ta": "பட்டதாரிகள் புதிய தொழில் தொடங்க 25% மூலதன மானியம் (அதிகபட்சம் ₹75 லட்சம் வரை) + 3% வட்டி மானியம்.",
+    "benefit_summary_en": "25% capital subsidy up to ₹75 Lakhs for educated youth to set up manufacturing or service enterprises.",
+    "monetary_value": "25% மானியம் (₹75 லட்சம் வரை)",
+    "monetary_value_en": "25% Subsidy (Up to ₹75L)",
+    "badge_ta": "₹75 லட்சம் வரை மானியம்",
+    "badge_en": "Up to ₹75L Subsidy",
+    "eligibility_rules": {
+      "age_min": 21,
+      "age_max": 45,
+      "occupation": ["self_employed", "unemployed", "business"]
+    },
+    "eligibility_text_ta": "பட்டப்படிப்பு அல்லது பட்டயப்படிப்பு (Degree / Diploma) முடித்த 21 முதல் 45 வயதுக்குட்பட்ட புதிய தொழில்முனைவோர் (மகளிர்/SC/ST/BC/MBC பிரிவினருக்கு வயது வரம்பு 45 வரை).",
+    "eligibility_text_en": "Educated graduates/diploma holders aged 21-45 embarking on new manufacturing or service ventures.",
+    "required_documents_ta": [
+      "பட்டப்படிப்பு / பட்டயப்படிப்பு சான்றிதழ் (Degree / Diploma Certificate)",
+      "சாதி சான்றிதழ் (Community Certificate)",
+      "திட்ட அறிக்கை (Detailed Project Report)",
+      "ஆதார் & பான் அட்டை (Aadhaar & PAN Card)"
+    ],
+    "required_documents_en": [
+      "Degree/Diploma Certificate",
+      "Community Certificate",
+      "Detailed Project Report",
+      "Aadhaar and PAN Card"
+    ],
+    "how_to_apply_ta": "msmeonline.tn.gov.in போர்டல் வழியாக மாவட்ட தொழில் மையத்திற்கு (DIC) விண்ணப்பிக்கவும்.",
+    "how_to_apply_en": "Apply online at msmeonline.tn.gov.in to the District Industries Centre.",
+    "official_url": "https://msmeonline.tn.gov.in",
+    "tags": ["needs", "business", "msme", "graduate", "subsidy", "startup"]
+  },
+  {
+    "id": "naan-mudhalvan",
+    "name_ta": "நான் முதல்வன் திறன் மேம்பாட்டுத் திட்டம்",
+    "name_en": "Naan Mudhalvan Skill Development Scheme",
+    "category": "students",
+    "category_ta": "மாணவர் & கல்வி",
+    "category_en": "Students & Education",
+    "department_ta": "தமிழ்நாடு திறன் மேம்பாட்டுக் கழகம் (TNSDC)",
+    "department_en": "Tamil Nadu Skill Development Corporation",
+    "benefit_summary_ta": "இலவச தொழில்நுட்பப் பயிற்சிகள் (AI, Coding, Data, Robotics) மற்றும் முன்னனி நிறுவனங்களில் வேலைவாய்ப்பு நேர்காணல்கள்.",
+    "benefit_summary_en": "Free specialized technical training (AI, Cloud, Coding, Robotics) and direct campus hiring drives.",
+    "monetary_value": "இலவச தொழிற்பயிற்சி & வேலைவாய்ப்பு",
+    "monetary_value_en": "Free Training & Placements",
+    "badge_ta": "இலவச திறன் பயிற்சி",
+    "badge_en": "Free Upskilling",
+    "eligibility_rules": {
+      "occupation": ["student", "unemployed"],
+      "age_min": 17,
+      "age_max": 28
+    },
+    "eligibility_text_ta": "கல்லூரிகளில் படிக்கும் மாணவர்கள் மற்றும் பட்டதாரிகள் அனைவருக்கும் இலவசம்.",
+    "eligibility_text_en": "Open to all undergraduate, postgraduate college students and recent job seekers in Tamil Nadu.",
+    "required_documents_ta": [
+      "ஆதார் அட்டை (Aadhaar Card)",
+      "கல்லூரி சேர்க்கை எண் / பட்டப்படிப்பு சான்றிதழ் (College Reg No / Degree)",
+      "மின்னஞ்சல் மற்றும் கைபேசி எண் (Email & Mobile)"
+    ],
+    "required_documents_en": [
+      "Aadhaar Card",
+      "College Register Number / Degree Certificate",
+      "Mobile Number & Email ID"
+    ],
+    "how_to_apply_ta": "naanmudhalvan.tn.gov.in இணையதளத்தில் நேரடியாக இலவசமாக பதிவு செய்யலாம்.",
+    "how_to_apply_en": "Register directly on naanmudhalvan.tn.gov.in with college register number.",
+    "official_url": "https://naanmudhalvan.tn.gov.in",
+    "tags": ["student", "skills", "job", "career", "training", "naan mudhalvan"]
+  },
+  {
+    "id": "differently-abled-pension",
+    "name_ta": "மாற்றுத்திறனாளிகள் மாதாந்திர பராமரிப்பு உதவித்தொகை",
+    "name_en": "Differently Abled Maintenance Allowance Scheme",
+    "category": "welfare",
+    "category_ta": "சமூக நலம் & மாற்றுத்திறனாளிகள்",
+    "category_en": "Social Welfare & Disability",
+    "department_ta": "மாற்றுத்திறனாளிகள் நலத்துறை",
+    "department_en": "Welfare of Differently Abled Persons Department",
+    "benefit_summary_ta": "கடுமையாக பாதிக்கப்பட்ட மாற்றுத்திறனாளிகளுக்கு மாதம் ₹2,000 நேரடி வங்கிப் பரிமாற்றம் + இலவச பேருந்து பயணம்.",
+    "benefit_summary_en": "₹2,000 monthly maintenance allowance + Free bus travel pass across Tamil Nadu state transport.",
+    "monetary_value": "₹2,000 / மாதம் + இலவச பேருந்து",
+    "monetary_value_en": "₹2,000 / Month + Free Bus",
+    "badge_ta": "மாதம் ₹2,000 உதவித்தொகை",
+    "badge_en": "₹2,000 Monthly",
+    "eligibility_rules": {
+      "differently_abled": true,
+      "disability_percentage_min": 40
+    },
+    "eligibility_text_ta": "40% மற்றும் அதற்கு மேற்பட்ட உடல் அல்லது மனநல பாதிப்புடைய மாற்றுத்திறனாளிகள்.",
+    "eligibility_text_en": "Persons with certified disability of 40% or more possessing National Disability ID Card (UDID).",
+    "required_documents_ta": [
+      "தேசிய அடையாள அட்டை / UDID அட்டை (UDID Card)",
+      "மருத்துவ அலுவலர் வழங்கிய ஊனமுற்றோர் சான்றிதழ் (Disability Certificate)",
+      "ஆதார் அட்டை (Aadhaar Card)",
+      "வங்கி கணக்கு புத்தகம் (Bank Passbook)",
+      "குடும்ப அட்டை (Ration Card)"
+    ],
+    "required_documents_en": [
+      "UDID Card / National Identity Card for PwD",
+      "Medical Board Disability Certificate",
+      "Aadhaar Card",
+      "Bank Account Passbook",
+      "Ration Card"
+    ],
+    "how_to_apply_ta": "மாவட்ட மாற்றுத்திறனாளிகள் நல அலுவலர் (DDAWO) அல்லது இ-சேவை மையம் மூலம் விண்ணப்பிக்கலாம்.",
+    "how_to_apply_en": "Apply through District Differently Abled Welfare Officer (DDAWO) or local e-Sevai centre.",
+    "official_url": "https://www.scd.tn.gov.in",
+    "tags": ["disabled", "pwd", "udid", "pension", "differently abled", "2000"]
+  },
+  {
+    "id": "widow-destitute-pension",
+    "name_ta": "விதவை மற்றும் ஆதரவற்ற பெண்கள் உதவித்தொகை",
+    "name_en": "Widow & Destitute Women Pension Scheme",
+    "category": "women",
+    "category_ta": "மகளிர் நலம்",
+    "category_en": "Women Welfare",
+    "department_ta": "வருவாய்த்துறை மற்றும் சமூக பாதுகாப்பு",
+    "department_en": "Revenue & Social Security Department",
+    "benefit_summary_ta": "மாதம் ₹1,200 நேரடி ஓய்வூதியம் + இலவச வேட்டி / சேலை மற்றும் இலவச அரிசி.",
+    "benefit_summary_en": "₹1,200 monthly pension + free clothing and food grains.",
+    "monetary_value": "₹1,200 / மாதம்",
+    "monetary_value_en": "₹1,200 / Month",
+    "badge_ta": "மாதம் ₹1,200",
+    "badge_en": "₹1,200 Monthly",
+    "eligibility_rules": {
+      "gender": ["female"],
+      "marital_status": ["widow", "deserted"],
+      "age_min": 18,
+      "max_income": 100000
+    },
+    "eligibility_text_ta": "18 வயதுக்கு மேற்பட்ட ஆதரவற்ற விதவைகள் அல்லது கணவனால் கைவிடப்பட்ட பெண்கள் (வருமானம் ₹1 லட்சத்திற்குள்).",
+    "eligibility_text_en": "Destitute widows or deserted women aged 18 and above with annual family income below ₹1,00,000.",
+    "required_documents_ta": [
+      "விதவை சான்றிதழ் / கணவர் இறப்பு சான்றிதழ் (Widow / Death Certificate)",
+      "ஆதார் அட்டை (Aadhaar Card)",
+      "வருமானச் சான்றிதழ் (Income Certificate)",
+      "வங்கி கணக்கு புத்தகம் (Bank Passbook)",
+      "குடும்ப அட்டை (Ration Card)"
+    ],
+    "required_documents_en": [
+      "Widow Certificate / Husband Death Certificate",
+      "Aadhaar Card",
+      "Income Certificate",
+      "Bank Account Passbook",
+      "Ration Card"
+    ],
+    "how_to_apply_ta": "இ-சேவை மையத்தில் விண்ணப்பித்து கிராம நிர்வாக அலுவலர் (VAO) சரிபார்ப்புக்கு சமர்ப்பிக்கலாம்.",
+    "how_to_apply_en": "Apply via e-Sevai centre for verification by local Revenue Inspector and VAO.",
+    "official_url": "https://www.tnesevai.tn.gov.in",
+    "tags": ["widow", "destitute", "pension", "women", "1200"]
+  },
+  {
+    "id": "first-graduate-tuition-waiver",
+    "name_ta": "முதல் தலைமுறை பட்டதாரி கல்விக் கட்டணச் சலுகை",
+    "name_en": "First Graduate Tuition Fee Concession Scheme",
+    "category": "students",
+    "category_ta": "மாணவர் & கல்வி",
+    "category_en": "Students & Education",
+    "department_ta": "உயர்கல்வித் துறை",
+    "department_en": "Higher Education Department",
+    "benefit_summary_ta": "பொறியியல், மருத்துவம் மற்றும் தொழிற்கல்வி படிப்புகளுக்கு முழுக் கல்விக் கட்டண விலக்கு (ஆண்டுக்கு ₹25,000 முதல் ₹1,00,000 வரை சேமிப்பு).",
+    "benefit_summary_en": "Complete tuition fee waiver for professional degrees like Engineering, Agriculture, Medical (Saves ₹25,000 - ₹1,00,000/yr).",
+    "monetary_value": "முழு கல்விக் கட்டண விலக்கு (₹1 லட்சம் வரை)",
+    "monetary_value_en": "Full Tuition Fee Waiver",
+    "badge_ta": "கல்விக் கட்டண விலக்கு",
+    "badge_en": "Full Fee Waiver",
+    "eligibility_rules": {
+      "occupation": ["student"],
+      "first_graduate_in_family": true,
+      "student_status": "college"
+    },
+    "eligibility_text_ta": "குடும்பத்தில் இதுவரை யாரும் பட்டப்படிப்பு முடிக்காத முதல் பட்டதாரி மாணவர் (அரசு கலந்தாய்வு மூலம் சேருபவர்கள்).",
+    "eligibility_text_en": "First person in the entire family to enter an undergraduate degree program, admitted via single-window counseling.",
+    "required_documents_ta": [
+      "முதல் பட்டதாரி சான்றிதழ் (First Graduate Certificate from Tahsildar)",
+      "குடும்ப உறுப்பினர்களின் கல்விச் சான்றுகள் / உறுதிமொழிப் பத்திரம் (Family Educational Declaration)",
+      "ஆதார் அட்டை (Aadhaar Card)",
+      "12-ஆம் வகுப்பு மதிப்பெண் பட்டியல் (12th Marksheet)",
+      "கலந்தாய்வு ஒதுக்கீட்டுக் கடிதம் (Allotment Order)"
+    ],
+    "required_documents_en": [
+      "First Graduate Certificate from Revenue Department",
+      "Declaration letter regarding family education status",
+      "Aadhaar Card",
+      "12th Marksheet",
+      "Single Window Counseling Allotment Order"
+    ],
+    "how_to_apply_ta": "முதலில் இ-சேவை மையத்தில் முதல் பட்டதாரி சான்றிதழ் பெற்று, கல்லூரி சேர்க்கையின் போது சமர்ப்பிக்க வேண்டும்.",
+    "how_to_apply_en": "Obtain First Graduate Certificate at e-Sevai, submit during counselling & college admission.",
+    "official_url": "https://www.tneaonline.org",
+    "tags": ["first graduate", "tuition", "engineering", "college", "fees", "concession"]
+  },
+  {
+    "id": "moovalur-marriage-aid",
+    "name_ta": "மூவலூர் ராமாமிர்தம் அம்மையார் திருமண நிதியுதவித் திட்டம்",
+    "name_en": "Moovalur Ramamirtham Ammaiyar Marriage Assistance Scheme",
+    "category": "women",
+    "category_ta": "மகளிர் நலம்",
+    "category_en": "Women Welfare",
+    "department_ta": "சமூக நலத்துறை",
+    "department_en": "Social Welfare Department",
+    "benefit_summary_ta": "ஏழைப் பெண்களுக்கு திருமண நிதி உதவி ₹25,000 முதல் ₹50,000 வரை + திருமாங்கல்யத்திற்கு 8 கிராம் தங்கம் (1 சவரன்).",
+    "benefit_summary_en": "Financial aid of ₹25,000 to ₹50,000 + 8 grams gold coin for Mangalsutra for daughters of poor families.",
+    "monetary_value": "₹50,000 + 8 கிராம் தங்கம்",
+    "monetary_value_en": "₹50,000 + 8g Gold Coin",
+    "badge_ta": "₹50,000 + 1 சவரன் தங்கம்",
+    "badge_en": "₹50,000 + 8g Gold",
+    "eligibility_rules": {
+      "gender": ["female"],
+      "age_min": 18,
+      "age_max": 35,
+      "max_income": 72000
+    },
+    "eligibility_text_ta": "ஏழைக் குடும்பங்களைச் சேர்ந்த மணப்பெண் (10-ஆம் வகுப்பு முடித்தவருக்கு ₹25,000; பட்டதாரிகளுக்கு ₹50,000 + 8 கிராம் தங்கம்).",
+    "eligibility_text_en": "Brides from low-income families (10th pass: ₹25,000; Degree holders: ₹50,000 plus 8g gold sovereign).",
+    "required_documents_ta": [
+      "திருமண அழைப்பிதழ் (Wedding Invitation)",
+      "மணமகள் கல்விச் சான்றிதழ் (Educational Certificate 10th or Degree)",
+      "வருமானச் சான்றிதழ் (Income Certificate under ₹72,000)",
+      "மணமக்கள் வயது சான்றிதழ் (Age Proof of Bride & Groom)",
+      "ஆதார் அட்டை (Aadhaar Card)"
+    ],
+    "required_documents_en": [
+      "Marriage Invitation Card",
+      "Educational qualification proof",
+      "Income Certificate",
+      "Age proof for bride and groom",
+      "Aadhaar Cards"
+    ],
+    "how_to_apply_ta": "திருமணத்திற்கு 40 நாட்களுக்கு முன்பாக இ-சேவை மையம் அல்லது சமூக நல அலுவலரிடம் விண்ணப்பிக்க வேண்டும்.",
+    "how_to_apply_en": "Apply at e-Sevai or District Social Welfare Office at least 40 days prior to the wedding date.",
+    "official_url": "https://www.tnesevai.tn.gov.in",
+    "tags": ["marriage", "wedding", "gold", "thali", "aid", "women"]
+  },
+  {
+    "id": "pmegp-self-employment",
+    "name_ta": "பிரதமரின் வேலைவாய்ப்பு உருவாக்கும் திட்டம் (PMEGP)",
+    "name_en": "Prime Minister Employment Generation Programme",
+    "category": "business",
+    "category_ta": "தொழில்முனைவோர்",
+    "category_en": "Entrepreneurs & Business",
+    "department_ta": "கதர் மற்றும் கிராமத் தொழில்கள் ஆணையம் (KVIC)",
+    "department_en": "Khadi and Village Industries Commission",
+    "benefit_summary_ta": "உற்பத்தி பிரிவுக்கு ₹50 லட்சம் வரை, சேவைப் பிரிவுக்கு ₹20 லட்சம் வரை வங்கிக் கடன்; 25% முதல் 35% வரை மானியம்.",
+    "benefit_summary_en": "Bank loan up to ₹50 Lakh for manufacturing & ₹20 Lakh for services with 25% to 35% government subsidy.",
+    "monetary_value": "35% வரை மானியம் (₹17.5 லட்சம்)",
+    "monetary_value_en": "Up to 35% Subsidy",
+    "badge_ta": "35% கடன் மானியம்",
+    "badge_en": "35% Subsidy",
+    "eligibility_rules": {
+      "age_min": 18,
+      "age_max": 65,
+      "occupation": ["self_employed", "unemployed", "business"]
+    },
+    "eligibility_text_ta": "18 வயதுக்கு மேற்பட்ட எவரும் புதிய குறுந்தொழில் தொடங்க விண்ணப்பிக்கலாம். 8-ஆம் வகுப்பு தேர்ச்சி பெற்றிருக்க வேண்டும்.",
+    "eligibility_text_en": "Any individual above 18 years passing 8th std wishing to set up a new micro-enterprise.",
+    "required_documents_ta": [
+      "ஆதார் அட்டை (Aadhaar Card)",
+      "பான் அட்டை (PAN Card)",
+      "சாதி சான்றிதழ் (Community Certificate)",
+      "கல்வித் தகுதிச் சான்றிதழ் (8th / 10th Certificate)",
+      "விரிவான திட்ட அறிக்கை (Project Profile Report)"
+    ],
+    "required_documents_en": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Community Certificate",
+      "Educational Certificate (8th Std minimum)",
+      "Detailed Project Report (DPR)"
+    ],
+    "how_to_apply_ta": "kviconline.gov.in இணையதளத்தில் ஆன்லைனில் நேரடியாக விண்ணப்பிக்கலாம்.",
+    "how_to_apply_en": "Submit online application directly on kviconline.gov.in portal.",
+    "official_url": "https://www.kviconline.gov.in",
+    "tags": ["business", "loan", "subsidy", "pmegp", "self employed", "micro"]
+  },
+  {
+    "id": "kalaignar-housing-scheme",
+    "name_ta": "கலைஞரின் கனவு இல்லம் திட்டம் (வீடு கட்டும் திட்டம்)",
+    "name_en": "Kalaignarin Kanavu Illam Housing Scheme",
+    "category": "welfare",
+    "category_ta": "வீட்டு வசதி & நலம்",
+    "category_en": "Housing & Welfare",
+    "department_ta": "ஊரக வளர்ச்சி மற்றும் ஊராட்சித் துறை",
+    "department_en": "Rural Development and Panchayat Raj Department",
+    "benefit_summary_ta": "ஊரகப் பகுதிகளில் குடிசைகளில் வசிப்போர் கான்கிரீட் வீடு கட்ட ₹3,50,000 வரை நேரடி மானிய உதவி.",
+    "benefit_summary_en": "Direct financial aid of ₹3,50,000 for rural hut dwellers to construct concrete pucca houses.",
+    "monetary_value": "₹3,50,000 நேரடி உதவி",
+    "monetary_value_en": "₹3,50,000 Construction Aid",
+    "badge_ta": "₹3.5 லட்சம் வீடு மானியம்",
+    "badge_en": "₹3.5L House Aid",
+    "eligibility_rules": {
+      "location": "rural",
+      "housing_type": "hut_or_katcha",
+      "max_income": 150000,
+      "owns_house_site": true
+    },
+    "eligibility_text_ta": "கிராமப்புறங்களில் குடிசை வீடுகளில் வசிப்பவர்கள், சொந்தமாக வீட்டு மனை நிலம் வைத்துள்ள ஏழைக் குடும்பங்கள்.",
+    "eligibility_text_en": "Rural families living in thatched huts who possess title deed for house site without a pucca house.",
+    "required_documents_ta": [
+      "மனை பட்டா / இட உரிமை ஆவணம் (House Site Patta)",
+      "குடும்ப அட்டை (Ration Card)",
+      "ஆதார் அட்டை (Aadhaar Card)",
+      "வங்கி கணக்கு புத்தகம் (Bank Passbook)",
+      "தற்போதைய குடிசை வீட்டின் புகைப்படம் (Photo of Existing Hut)"
+    ],
+    "required_documents_en": [
+      "House Site Patta",
+      "Smart Ration Card",
+      "Aadhaar Card",
+      "Bank Account details",
+      "Photograph of current hut dwelling"
+    ],
+    "how_to_apply_ta": "கிராம ஊராட்சி மன்ற அலுவலகத்தில் அல்லது வட்டார வளர்ச்சி அலுவலகத்தில் (BDO) விண்ணப்பிக்கலாம்.",
+    "how_to_apply_en": "Apply through Village Panchayat Secretary or Block Development Office (BDO).",
+    "official_url": "https://tnrd.tn.gov.in",
+    "tags": ["housing", "house", "hut", "rural", "shelter", "construction"]
+  },
+  {
+    "id": "construction-workers-board",
+    "name_ta": "தமிழ்நாடு கட்டுமானத் தொழிலாளர்கள் நல வாரிய சலுகைகள்",
+    "name_en": "Tamil Nadu Construction Workers Welfare Board Schemes",
+    "category": "welfare",
+    "category_ta": "தொழிலாளர் நலம்",
+    "category_en": "Labour Welfare",
+    "department_ta": "தொழிலாளர் நலன் மற்றும் திறன் மேம்பாட்டுத் துறை",
+    "department_en": "Labour Welfare Department",
+    "benefit_summary_ta": "விபத்து மரண இழப்பீடு ₹5,00,000, இயற்கை மரணம் ₹50,000, மகள் திருமணத்திற்கு ₹20,000, மாத ஓய்வூதியம் ₹1,000.",
+    "benefit_summary_en": "Accidental death relief ₹5,00,000, natural death aid ₹50,000, daughter marriage aid ₹20,000, pension ₹1,000.",
+    "monetary_value": "₹5,00,000 விபத்து நிதி + ஓய்வூதியம்",
+    "monetary_value_en": "₹5,00,000 Accident Aid + Pension",
+    "badge_ta": "₹5 லட்சம் நலத்திட்டம்",
+    "badge_en": "₹5L Worker Aid",
+    "eligibility_rules": {
+      "occupation": ["daily_wage", "unorganized", "construction"],
+      "age_min": 18,
+      "age_max": 60
+    },
+    "eligibility_text_ta": "கட்டுமானம், கொத்தனார், தச்சர், பெயிண்டர் போன்ற உடல் உழைப்புத் தொழிலாளர்கள் 18 முதல் 60 வயது வரை உள்ளவர்கள்.",
+    "eligibility_text_en": "Registered manual construction workers, masons, carpenters, and painters aged 18 to 60.",
+    "required_documents_ta": [
+      "தொழிலாளர் நல வாரிய உறுப்பினர் அட்டை (Board Membership ID)",
+      "ஆதார் அட்டை (Aadhaar Card)",
+      "வங்கி கணக்கு புத்தகம் (Bank Passbook)",
+      "ரேஷன் அட்டை (Ration Card)"
+    ],
+    "required_documents_en": [
+      "Welfare Board Membership ID Card",
+      "Aadhaar Card",
+      "Bank Account Passbook",
+      "Ration Card"
+    ],
+    "how_to_apply_ta": "tnuwwb.tn.gov.in போர்டல் அல்லது இ-சேவை மையம் மூலம் தொழிலாளர் நல வாரியத்தில் இலவசமாக பதிவு செய்யலாம்.",
+    "how_to_apply_en": "Register via tnuwwb.tn.gov.in portal or at any e-Sevai centre.",
+    "official_url": "https://tnuwwb.tn.gov.in",
+    "tags": ["labour", "construction", "worker", "pension", "accident", "welfare"]
+  },
+  {
+    "id": "weavers-free-power",
+    "name_ta": "கைத்தறி மற்றும் விசைத்தறி நெசவாளர்களுக்கு இலவச மின்சாரம்",
+    "name_en": "Free Electricity Scheme for Handloom & Powerloom Weavers",
+    "category": "business",
+    "category_ta": "நெசவாளர் நலம்",
+    "category_en": "Weavers Welfare",
+    "department_ta": "கைத்தறி, கைத்திறன், துணிநூல் மற்றும் கதர்த்துறை",
+    "department_en": "Handlooms, Handicrafts, Textiles and Khadi Department",
+    "benefit_summary_ta": "கைத்தறி நெசவாளர்களுக்கு 300 யூனிட் மற்றும் விசைத்தறி நெசவாளர்களுக்கு 1000 யூனிட் வரை இலவச மின்சாரம்.",
+    "benefit_summary_en": "Free electricity up to 300 units bi-monthly for handlooms and 1,000 units bi-monthly for powerlooms.",
+    "monetary_value": "1000 யூனிட் இலவச மின்சாரம்",
+    "monetary_value_en": "1000 Units Free Power",
+    "badge_ta": "இலவச மின்சாரம்",
+    "badge_en": "Free Electricity",
+    "eligibility_rules": {
+      "occupation": ["weaver", "self_employed", "business"]
+    },
+    "eligibility_text_ta": "தமிழ்நாட்டில் சொந்தமாக கைத்தறி அல்லது விசைத்தறி இயக்கும் பதிவுபெற்ற நெசவாளர்கள்.",
+    "eligibility_text_en": "Registered handloom and powerloom weavers operating looms within Tamil Nadu.",
+    "required_documents_ta": [
+      "நெசவாளர் கூட்டுறவு சங்க உறுப்பினர் சான்று (Weaver Co-op Certificate)",
+      "மின் இணைப்பு அட்டை (TANGEDCO Consumer Card)",
+      "ஆதார் அட்டை (Aadhaar Card)"
+    ],
+    "required_documents_en": [
+      "Weavers Co-op Society Membership / Registration Proof",
+      "TANGEDCO Electricity Service Connection Card",
+      "Aadhaar Card"
+    ],
+    "how_to_apply_ta": "வட்டார கைத்தறி உதவி இயக்குனர் அலுவலகத்தில் அல்லது TANGEDCO அலுவலகத்தில் விண்ணப்பிக்கலாம்.",
+    "how_to_apply_en": "Submit application to the Assistant Director of Handlooms or local TANGEDCO office.",
+    "official_url": "https://www.tn.gov.in/department/13",
+    "tags": ["weaver", "loom", "handloom", "powerloom", "electricity", "textile"]
+  },
+  {
+    "id": "fishermen-lean-relief",
+    "name_ta": "மீன்பிடி தடைக்கால நிவாரண உதவித் திட்டம்",
+    "name_en": "Fishermen Ban Period & Lean Season Relief Scheme",
+    "category": "farmers",
+    "category_ta": "மீனவர் நலம்",
+    "category_en": "Fishermen Welfare",
+    "department_ta": "மீன்வளம் மற்றும் மீனவர் நலத்துறை",
+    "department_en": "Fisheries and Fishermen Welfare Department",
+    "benefit_summary_ta": "மீன்பிடி தடைக்காலத்தில் குடும்பத்திற்கு ₹5,000 முதல் ₹8,000 வரை நேரடி நிவாரண நிதி உதவி.",
+    "benefit_summary_en": "Direct cash assistance of ₹5,000 to ₹8,000 per marine fishing family during the fishing ban period.",
+    "monetary_value": "₹8,000 தடைக்கால நிவாரணம்",
+    "monetary_value_en": "₹8,000 Ban Relief",
+    "badge_ta": "₹8,000 மீனவர் உதவி",
+    "badge_en": "₹8,000 Relief",
+    "eligibility_rules": {
+      "occupation": ["fisherman", "fishery"]
+    },
+    "eligibility_text_ta": "தமிழ்நாடு கடல்சார் மீனவர் கூட்டுறவு சங்கங்களில் பதிவு செய்துள்ள பாரம்பரிய மீனவ குடும்பங்கள்.",
+    "eligibility_text_en": "Traditional marine fishing families registered with Fishermen Cooperative Societies in coastal districts.",
+    "required_documents_ta": [
+      "மீனவர் கூட்டுறவு சங்க உறுப்பினர் அட்டை (Fisherman Society Card)",
+      "ஆதார் அட்டை (Aadhaar Card)",
+      "வங்கி கணக்கு புத்தகம் (Bank Passbook)",
+      "ரேஷன் அட்டை (Ration Card)"
+    ],
+    "required_documents_en": [
+      "Fishermen Co-operative Society ID Card",
+      "Aadhaar Card",
+      "Bank Account Passbook",
+      "Ration Card"
+    ],
+    "how_to_apply_ta": "கடற்கரை கிராமங்களில் உள்ள மீனவர் கூட்டுறவு சங்கம் மூலம் ஆண்டுதோறும் பதிவு செய்யப்படும்.",
+    "how_to_apply_en": "Enrollment done through coastal primary Marine Fishermen Cooperative Societies.",
+    "official_url": "https://fisheries.tn.gov.in",
+    "tags": ["fisherman", "fisheries", "marine", "relief", "sea"]
+  },
+  {
+    "id": "free-sewing-machine",
+    "name_ta": "சத்யவாணி முத்து அம்மையார் நினைவு இலவச தையல் இயந்திரம் திட்டம்",
+    "name_en": "Sathyavani Muthu Ammaiyar Free Sewing Machine Scheme",
+    "category": "women",
+    "category_ta": "மகளிர் நலம்",
+    "category_en": "Women Welfare",
+    "department_ta": "சமூக நலத்துறை",
+    "department_en": "Social Welfare Department",
+    "benefit_summary_ta": "ஏழைப் பெண்கள், விதவைகள் மற்றும் ஆதரவற்ற மகளிருக்கு கட்டணமில்லா தையல் இயந்திரம் இலவசமாக வழங்கப்படுகிறது.",
+    "benefit_summary_en": "Free sewing machine provided to poor destitute women, widows, and deserted wives to earn livelihood.",
+    "monetary_value": "இலவச தையல் இயந்திரம்",
+    "monetary_value_en": "Free Sewing Machine",
+    "badge_ta": "இலவச தையல் இயந்திரம்",
+    "badge_en": "Free Machine",
+    "eligibility_rules": {
+      "gender": ["female"],
+      "age_min": 20,
+      "age_max": 40,
+      "max_income": 72000
+    },
+    "eligibility_text_ta": "தையல் கலை தெரிந்த 20 முதல் 40 வயதுக்குட்பட்ட ஏழைப் பெண்கள், விதவைகள், கணவனால் கைவிடப்பட்டோர்.",
+    "eligibility_text_en": "Destitute women, widows, deserted wives, or physically challenged women aged 20-40 having basic tailoring skills.",
+    "required_documents_ta": [
+      "தையல் பயிற்சி சான்றிதழ் (Tailoring Training Certificate)",
+      "வருமானச் சான்றிதழ் (Income under ₹72,000)",
+      "ஆதார் அட்டை (Aadhaar Card)",
+      "சாதி சான்றிதழ் (Community Certificate)"
+    ],
+    "required_documents_en": [
+      "Tailoring Training Certificate",
+      "Income Certificate (< ₹72,000)",
+      "Aadhaar Card",
+      "Community Certificate"
+    ],
+    "how_to_apply_ta": "மாவட்ட சமூக நல அலுவலர் (DSWO) அல்லது வட்டார வளர்ச்சி அலுவலகத்தில் (BDO) விண்ணப்பிக்கலாம்.",
+    "how_to_apply_en": "Apply through District Social Welfare Office or Block Development Office.",
+    "official_url": "https://www.tnesevai.tn.gov.in",
+    "tags": ["women", "tailoring", "sewing machine", "livelihood", "widow"]
+  },
+  {
+    "id": "cm-breakfast-scheme",
+    "name_ta": "முதலமைச்சரின் காலை உணவுத் திட்டம்",
+    "name_en": "Chief Minister Morning Breakfast Scheme",
+    "category": "students",
+    "category_ta": "மாணவர் & கல்வி",
+    "category_en": "Students & Education",
+    "department_ta": "சமூக நலன் மற்றும் மகளிர் உரிமைத் துறை",
+    "department_en": "Social Welfare Department",
+    "benefit_summary_ta": "அரசுப் பள்ளிகளில் 1 முதல் 5-ஆம் வகுப்பு வரை பயிலும் அனைத்து குழந்தைகளுக்கும் ஊட்டச்சத்து நிறைந்த இலவச காலை உணவு.",
+    "benefit_summary_en": "Free nutritious hot breakfast for all primary school children studying in classes 1 to 5 in govt schools.",
+    "monetary_value": "இலவச ஊட்டச்சத்து காலை உணவு",
+    "monetary_value_en": "Free Nutritious Breakfast",
+    "badge_ta": "இலவச காலை உணவு",
+    "badge_en": "Free Breakfast",
+    "eligibility_rules": {
+      "occupation": ["student"],
+      "age_min": 5,
+      "age_max": 11,
+      "school_type": "government"
+    },
+    "eligibility_text_ta": "தமிழ்நாடு முழுவதும் உள்ள அரசு தொடக்கப் பள்ளிகளில் 1 முதல் 5-ஆம் வகுப்பு பயிலும் அனைத்து குழந்தைகள்.",
+    "eligibility_text_en": "All children studying in classes 1 to 5 across all Tamil Nadu Government primary schools.",
+    "required_documents_ta": [
+      "அரசுப் பள்ளி மாணவர் சேர்க்கை எண் (School EMIS ID)",
+      "ஆதார் அட்டை (Aadhaar Card)"
+    ],
+    "required_documents_en": [
+      "School Admission EMIS ID",
+      "Aadhaar Card"
+    ],
+    "how_to_apply_ta": "பள்ளியில் சேர்ந்தவுடன் தானாகவே இத்திட்டம் அனைத்து மாணவர்களுக்கும் செயல்படுத்தப்படுகிறது.",
+    "how_to_apply_en": "Automatically provided to enrolled primary students without separate application.",
+    "official_url": "https://www.tn.gov.in",
+    "tags": ["breakfast", "student", "primary", "school", "nutrition", "food"]
+  },
+  {
+    "id": "unmarried-poor-women-pension",
+    "name_ta": "50 வயது கடந்த ஆதரவற்ற ஏழை திருமணமாகாத பெண்கள் ஓய்வூதியம்",
+    "name_en": "Destitute Unmarried Poor Women Pension Scheme",
+    "category": "women",
+    "category_ta": "மகளிர் நலம்",
+    "category_en": "Women Welfare",
+    "department_ta": "வருவாய்த்துறை மற்றும் சமூக பாதுகாப்பு",
+    "department_en": "Revenue & Social Security Department",
+    "benefit_summary_ta": "மாதம் ₹1,200 நேரடி ஓய்வூதியம் + இலவச வேட்டி / சேலை மற்றும் ரேஷன் உணவு தானியங்கள்.",
+    "benefit_summary_en": "₹1,200 monthly pension + free clothing and food grains for destitute unmarried women aged 50+.",
+    "monetary_value": "₹1,200 / மாதம்",
+    "monetary_value_en": "₹1,200 / Month",
+    "badge_ta": "மாதம் ₹1,200",
+    "badge_en": "₹1,200 Monthly",
+    "eligibility_rules": {
+      "gender": ["female"],
+      "marital_status": ["single"],
+      "age_min": 50,
+      "max_income": 100000,
+      "destitute_status": true
+    },
+    "eligibility_text_ta": "50 வயது நிரம்பிய, திருமணமாகாத, குடும்ப ஆதரவற்ற ஏழைப் பெண்கள் (வருமானம் ₹1 லட்சத்திற்குள்).",
+    "eligibility_text_en": "Poor destitute unmarried women aged 50 years and above with family income under ₹1,00,000.",
+    "required_documents_ta": [
+      "வயது சான்றிதழ் (Age Certificate)",
+      "திருமணமாகவில்லை என்பதற்கான VAO அறிக்கை (Unmarried Verification Report)",
+      "ஆதார் அட்டை (Aadhaar Card)",
+      "வங்கி கணக்கு புத்தகம் (Bank Passbook)",
+      "குடும்ப அட்டை (Ration Card)"
+    ],
+    "required_documents_en": [
+      "Age proof document",
+      "Unmarried status report from VAO",
+      "Aadhaar Card",
+      "Bank Account Passbook",
+      "Smart Ration Card"
+    ],
+    "how_to_apply_ta": "கிராம நிர்வாக அலுவலர் (VAO) மற்றும் இ-சேவை மையம் மூலம் வட்டாட்சியருக்கு விண்ணப்பிக்கவும்.",
+    "how_to_apply_en": "Submit application through local VAO or at any e-Sevai centre to the Tahsildar.",
+    "official_url": "https://www.tnesevai.tn.gov.in",
+    "tags": ["women", "unmarried", "pension", "destitute", "50"]
+  }
+]

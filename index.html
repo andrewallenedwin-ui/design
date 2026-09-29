@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>நலம் தமிழ்நாடு | மக்கள் நலத்திட்டங்கள் & வெளிப்படை சான்றிதழ் சேவை தளம்</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <aside class="top-bar" aria-label="Accessibility & Tools">
+    <div class="top-bar-left">
+      <span><i class="fa-solid fa-flag"></i> தமிழ்நாடு அரசு | Government of Tamil Nadu</span>
+      <span style="opacity: 0.5;">|</span>
+      <span id="top-date">நேரடி மக்கள் சேவை தளம்</span>
+    </div>
+    <div class="top-bar-right">
+      <!-- Voice Assist -->
+      <button class="util-btn" id="voice-toggle-btn" title="குரல் வழி வாசிப்பு">
+        <i class="fa-solid fa-volume-high"></i> <span id="voice-btn-text">குரல் வாசிப்பு: ஆன்</span>
+      </button>
+
+      <!-- Font Resize -->
+      <span>எழுத்து அளவு:</span>
+      <button class="util-btn" id="font-dec" title="சிறியதாக்கு">A-</button>
+      <button class="util-btn" id="font-reset" title="இயல்பு">A</button>
+      <button class="util-btn" id="font-inc" title="பெரியதாக்கு">A+</button>
+
+      <!-- Contrast Mode -->
+      <button class="util-btn" id="contrast-toggle-btn" title="உயர் மாறுபாடு">
+        <i class="fa-solid fa-circle-half-stroke"></i> <span id="contrast-btn-text">மாறுபாடு</span>
+      </button>
+
+      <!-- Language Switcher -->
+      <button class="util-btn" id="lang-switch-btn" style="background: var(--secondary); color:#022c22; font-weight:700;">
+        <i class="fa-solid fa-language"></i> <span id="lang-label">English</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Main Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="#home" class="brand-wrapper" onclick="switchTab('home')">
+        <div class="govt-logo">
+          <!-- Tamil Nadu Temple Gopuram SVG Emblem (Red & Black Theme) -->
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="48" fill="#18181b" stroke="#dc2626" stroke-width="3"/>
+            <path d="M50 12 L56 26 L44 26 Z" fill="#ef4444"/>
+            <path d="M41 26 H59 V33 H41 Z" fill="#991b1b"/>
+            <path d="M37 33 H63 V42 H37 Z" fill="#ef4444"/>
+            <path d="M33 42 H67 V53 H33 Z" fill="#991b1b"/>
+            <path d="M28 53 H72 V67 H28 Z" fill="#ef4444"/>
+            <rect x="24" y="67" width="52" height="12" fill="#09090b" stroke="#ef4444" stroke-width="1.5"/>
+            <!-- Pillars -->
+            <rect x="30" y="67" width="6" height="12" fill="#fca5a5"/>
+            <rect x="42" y="67" width="6" height="12" fill="#fca5a5"/>
+            <rect x="52" y="67" width="6" height="12" fill="#fca5a5"/>
+            <rect x="64" y="67" width="6" height="12" fill="#fca5a5"/>
+            <circle cx="50" cy="22" r="3" fill="#ffffff"/>
+            <path d="M20 83 C 35 79, 65 79, 80 83" stroke="#fca5a5" stroke-width="2.5" fill="none"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1 id="brand-title">நலம் தமிழ்நாடு <span>• மக்கள் சேவை</span></h1>
+          <p id="brand-subtitle">அரசு நலத்திட்டங்கள் அறிதல் & வெளிப்படையான சான்றிதழ் கண்காணிப்பு</p>
+        </div>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-bar">
+        <a class="nav-link active" data-tab="home" onclick="switchTab('home')">
+          <i class="fa-solid fa-house"></i> <span class="t-nav-home">முகப்பு</span>
+        </a>
+        <a class="nav-link" data-tab="aadhaar" onclick="switchTab('aadhaar')">
+          <i class="fa-solid fa-id-card"></i> <span class="t-nav-aadhaar">ஆதார் தகுதி அறிதல்</span>
+        </a>
+        <a class="nav-link" data-tab="tracker" onclick="switchTab('tracker')">
+          <i class="fa-solid fa-list-check"></i> <span class="t-nav-tracker">சான்றிதழ் கண்காணிப்பு</span>
+        </a>
+        <a class="nav-link" data-tab="verify" onclick="switchTab('verify')">
+          <i class="fa-solid fa-qrcode"></i> <span class="t-nav-verify">QR சரிபார்ப்பு</span>
+        </a>
+        <a class="nav-link" data-tab="schemes" onclick="switchTab('schemes')">
+          <i class="fa-solid fa-hand-holding-heart"></i> <span class="t-nav-schemes">அனைத்து திட்டங்கள்</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="container">
+
+    <!-- TAB 1: HOME PAGE -->
+    <div id="tab-home" class="tab-pane active">
+      <!-- Hero Banner -->
+      <section class="hero-banner">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span class="t-hero-badge">வெளிப்படையான மக்கள் நிர்வாகம் • 100% கட்டணமில்லா வழிகாட்டி</span>
+          </div>
+          <h2 class="hero-title" id="t-hero-title">
+            அரசு நலத்திட்டங்கள் & சான்றிதழ்கள் இனி ஒவ்வொரு குடிமகனுக்கும் வெளிப்படையாக!
+          </h2>
+          <p class="hero-desc" id="t-hero-desc">
+            உங்களுக்கு அரசு வழங்கும் சலுகைகள் தெரியவில்லையா? உங்கள் ஆதார் எண்ணை இட்டு தகுதியான அனைத்து திட்டங்களையும் நொடியில் கண்டறியுங்கள். சான்றிதழ் மனுக்களை VAO முதல் வட்டாட்சியர் வரை வெளிப்படையாகக் கண்காணிக்கலாம்.
+          </p>
+          <div class="hero-cta-group">
+            <button class="btn btn-primary" onclick="switchTab('aadhaar')">
+              <i class="fa-solid fa-id-card"></i> <span class="t-btn-aadhaar">ஆதார் வழி திட்டங்கள் காண்க</span>
+            </button>
+            <button class="btn btn-outline-white" onclick="switchTab('tracker')">
+              <i class="fa-solid fa-magnifying-glass"></i> <span class="t-btn-track">சான்றிதழ் நிலையை அறிய</span>
+            </button>
+            <button class="btn btn-outline-white" onclick="toggleChatbot(true)">
+              <i class="fa-solid fa-comments"></i> <span class="t-btn-chat">சேவை தோழனுடன் உரையாடு</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Service Cards -->
+      <div class="feature-grid">
+        <div class="feature-card" onclick="switchTab('aadhaar')">
+          <div class="feature-icon-wrapper feature-icon-green">
+            <i class="fa-solid fa-fingerprint"></i>
+          </div>
+          <h3 class="t-fc1-title">ஆதார் நலத்திட்ட தகுதி</h3>
+          <p class="t-fc1-desc">உங்கள் குடும்ப வருமானம், வயது, தொழில் அடிப்படையில் தகுதியான ₹1,000 உரிமைத்தொகை, மாணவர் நிதி மற்றும் மானியங்களை உடனே பெறுங்கள்.</p>
+          <div class="card-link"><span class="t-explore">தகுதி பார்க்க</span> <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+        <div class="feature-card" onclick="switchTab('tracker')">
+          <div class="feature-icon-wrapper feature-icon-amber">
+            <i class="fa-solid fa-diagram-project"></i>
+          </div>
+          <h3 class="t-fc2-title">வெளிப்படையான சான்றிதழ் கண்காணிப்பு</h3>
+          <p class="t-fc2-desc">வருமானம், சாதி, முதல் பட்டதாரி சான்றிதழ் எந்த அலுவலரிடம் உள்ளது (VAO / RI / Tahsildar) மற்றும் கால அவகாசத்தை நேரலையாக கண்காணிக்கலாம்.</p>
+          <div class="card-link"><span class="t-explore">கண்காணிக்க</span> <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+        <div class="feature-card" onclick="switchTab('verify')">
+          <div class="feature-icon-wrapper feature-icon-blue">
+            <i class="fa-solid fa-qrcode"></i>
+          </div>
+          <h3 class="t-fc3-title">போலி சான்றிதழ் தடுப்பு (QR)</h3>
+          <p class="t-fc3-desc">அரசு வழங்கிய டிஜிட்டல் சான்றிதழின் உண்மைத்தன்மையை QR குறியீடு ஸ்கேன் செய்து உடனடியாக சரிபார்க்கும் அதிநவீன பாதுகாப்பு தளம்.</p>
+          <div class="card-link"><span class="t-explore">சரிபார்க்க</span> <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+
+        <div class="feature-card" onclick="toggleChatbot(true)">
+          <div class="feature-icon-wrapper feature-icon-purple">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <h3 class="t-fc4-title">"சேவை தோழன்" AI சாட்பாட்</h3>
+          <p class="t-fc4-desc">அரசு திட்டங்கள், தேவைப்படும் ஆவணங்கள், விண்ணப்பிக்கும் வழிமுறைகள் பற்றி தமிழில் பேசி விடை பெறலாம். குரல் வாசிப்பு வசதியுடன்!</p>
+          <div class="card-link"><span class="t-explore">உரையாட</span> <i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+      </div>
+
+      <!-- Awareness & Right to Service Transparency Banner -->
+      <div class="section-box" style="background: #fdfbf7; border-left: 6px solid var(--secondary);">
+        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+          <div style="font-size: 2.8rem; color: var(--secondary);">
+            <i class="fa-solid fa-bullhorn"></i>
+          </div>
+          <div style="flex: 1; min-width: 280px;">
+            <h3 style="font-size: 1.3rem; margin-bottom: 6px; color: #78350f;" class="t-aware-title">
+              குடிமக்களின் உரிமை: இடைத்தரகர்கள் இன்றி வெளிப்படையான அரசு சேவைகள்
+            </h3>
+            <p style="color: #92400e; font-size: 0.95rem; line-height: 1.5;" class="t-aware-desc">
+              அரசு விதிமுறைகளின்படி வருமானம், சாதி மற்றும் இருப்பிடச் சான்றிதழ்கள் 15 வேலை நாட்களுக்குள் வழங்கப்பட வேண்டும். எந்த ஒரு அலுவலருக்கும் இடைத்தரகருக்கும் கூடுதல் பணம் தரத் தேவையில்லை. தாமதமானால் முதல்வர் உதவி எண் <strong>1100</strong>-க்கு உடனடியாக அழைக்கலாம்.
+            </p>
+          </div>
+          <button class="btn btn-green" onclick="readAloudSection('t-aware-desc')">
+            <i class="fa-solid fa-volume-high"></i> <span class="t-listen">குரல் மூலம் கேள்</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- TAB 2: AADHAAR SCHEME ELIGIBILITY FINDER -->
+    <div id="tab-aadhaar" class="tab-pane" style="display: none;">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">
+            <i class="fa-solid fa-id-card" style="color: var(--primary);"></i>
+            <span class="t-aadhaar-heading">ஆதார் வழி நலத்திட்ட தகுதி சரிபார்ப்பு</span>
+          </h2>
+          <p class="section-subtitle t-aadhaar-sub">
+            உங்கள் சுயவிவரத்தின்படி நீங்கள் தகுதிபெறும் அனைத்து தமிழ்நாடு மற்றும் மத்திய அரசு நலத்திட்டங்களை உடனே கண்டறியுங்கள்.
+          </p>
+        </div>
+        <button class="btn btn-outline-white" style="color: var(--primary); border-color: var(--primary);" onclick="readAloudSection('aadhaar-intro-text')">
+          <i class="fa-solid fa-volume-high"></i> <span class="t-listen">விளக்கம் கேள்</span>
+        </button>
+      </div>
+
+      <div class="section-box">
+        <p id="aadhaar-intro-text" style="display:none;">உங்கள் ஆதார் எண்ணை உள்ளிட்டு அல்லது கீழே உள்ள மாதிரி சுயவிவரங்களை கிளிக் செய்து உங்களுக்கான தகுதியான அரசு திட்டங்களை பார்க்கலாம்.</p>
+
+        <!-- Aadhaar Card Input Box -->
+        <div class="aadhaar-input-box">
+          <label style="font-weight: 700; color: #fca5a5; font-size: 1.05rem;" class="t-aadhaar-box-title">
+            <i class="fa-solid fa-shield-halved" style="color: var(--primary);"></i> 12 இலக்க ஆதார் எண்ணை உள்ளிடவும் (Aadhaar Number)
+          </label>
+          <div class="aadhaar-field-group">
+            <input type="text" id="aadhaar-input" class="aadhaar-input" placeholder="XXXX - XXXX - XXXX" maxlength="14" value="">
+            <button class="btn btn-red" id="check-eligibility-btn" onclick="executeEligibilityCheck()">
+              <i class="fa-solid fa-sparkles"></i> <span class="t-btn-check-schemes">தகுதியைச் சரிபார்</span>
+            </button>
+          </div>
+          <p style="font-size: 0.8rem; color: #a1a1aa; margin-top: 8px;">
+            <i class="fa-solid fa-lock" style="color: #ef4444;"></i> <span class="t-aadhaar-privacy">உங்கள் விவரங்கள் பாதுகாப்பானவை. தரவுகள் எங்கும் சேமிக்கப்படாது.</span>
+          </p>
+        </div>
+
+
+        <!-- Custom Filter Collapsible -->
+        <details style="margin-top: 20px; background: #121215; border: 1px solid #27272a; border-radius: 10px; padding: 14px 18px;">
+          <summary style="font-weight: 700; color: #ef4444; cursor: pointer;" class="t-custom-filter-toggle">
+            <i class="fa-solid fa-sliders"></i> சுயவிவரத்தை நேரடியாக உள்ளிட விருப்பங்கள் (வயது, வருமானம், சமூகப் பிரிவு...)
+          </summary>
+          <form id="custom-profile-form" onsubmit="event.preventDefault(); executeEligibilityCheck();" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 16px;">
+            <div>
+              <label style="font-size: 0.85rem; font-weight: 600;" class="t-lbl-age">வயது (Age)</label>
+              <input type="number" id="f-age" class="chat-input" style="width: 100%; border-radius: 8px;" placeholder="வயது (எ.கா: 21)" min="1" max="110" value="">
+            </div>
+            <div>
+              <label style="font-size: 0.85rem; font-weight: 600;" class="t-lbl-gender">பாலினம் (Gender)</label>
+              <select id="f-gender" class="chat-input" style="width: 100%; border-radius: 8px;">
+                <option value="female">பெண் (Female)</option>
+                <option value="male">ஆண் (Male)</option>
+                <option value="other">மூன்றாம் பாலினம் (Other)</option>
+              </select>
+            </div>
+            <div>
+              <label style="font-size: 0.85rem; font-weight: 600;" class="t-lbl-income">குடும்ப ஆண்டு வருமானம் (₹)</label>
+              <input type="number" id="f-income" class="chat-input" style="width: 100%; border-radius: 8px;" placeholder="ஆண்டு வருமானம் (₹)" value="">
+            </div>
+            <div>
+              <label style="font-size: 0.85rem; font-weight: 600;" class="t-lbl-community">சமூகப் பிரிவு (Community)</label>
+              <select id="f-community" class="chat-input" style="width: 100%; border-radius: 8px;">
+                <option value="BC">BC (பிற்படுத்தப்பட்டோர்)</option>
+                <option value="MBC">MBC (மிகவும் பிற்படுத்தப்பட்டோர்)</option>
+                <option value="SC">SC (பட்டியலினத்தவர்)</option>
+                <option value="ST">ST (பழங்குடியினர்)</option>
+                <option value="OC">OC / பொதுப் பிரிவு</option>
+              </select>
+            </div>
+            <div>
+              <label style="font-size: 0.85rem; font-weight: 600;" class="t-lbl-occupation">தொழில் / நிலை</label>
+              <select id="f-occupation" class="chat-input" style="width: 100%; border-radius: 8px;">
+                <option value="student">மாணவர் (Student)</option>
+                <option value="farmer">விவசாயி (Farmer)</option>
+                <option value="self_employed">சுயதொழில் / வணிகம் (Self-Employed)</option>
+                <option value="unemployed">வேலை தேடுபவர் / இல்லத்தரசி</option>
+                <option value="daily_wage">உடல் உழைப்பு / தினக்கூலி தொழிலாளி</option>
+                <option value="weaver">நெசவாளர் (Weaver)</option>
+                <option value="fisherman">மீனவர் (Fisherman)</option>
+              </select>
+            </div>
+            <div style="display: flex; flex-direction: column; justify-content: center; gap: 8px;">
+              <label><input type="checkbox" id="f-first-graduate"> <span class="t-chk-firstgrad">முதல் பட்டதாரி (First Graduate)</span></label>
+              <label><input type="checkbox" id="f-land"> <span class="t-chk-land">விவசாய நிலம் உள்ளது (Patta Land)</span></label>
+              <label><input type="checkbox" id="f-disabled"> <span class="t-chk-pwd">மாற்றுத்திறனாளி (PwD)</span></label>
+            </div>
+            <div style="grid-column: 1 / -1;">
+              <button type="submit" class="btn btn-red" style="padding: 10px 18px;">
+                <i class="fa-solid fa-magnifying-glass"></i> <span class="t-btn-update">தகுதியைச் சரிபார்</span>
+              </button>
+            </div>
+          </form>
+        </details>
+
+        <!-- Eligibility Results Area -->
+        <div id="eligibility-results-container" style="display: none;">
+          <!-- Summary Banner -->
+          <div class="eligibility-summary-card">
+            <div>
+              <div class="badge-pill" style="background: rgba(255,255,255,0.2); border-color: white; color: white;">
+                <i class="fa-solid fa-circle-check"></i> <span class="t-elig-verified">தகுதி சரிபார்க்கப்பட்டது</span>
+              </div>
+              <h3 style="font-size: 1.5rem; font-weight: 800; margin: 4px 0 8px 0;" id="matched-count-text">
+                உங்களுக்கு 6 அரசு நலத்திட்டங்கள் தகுதியாக உள்ளன!
+              </h3>
+              <p style="color: #d1fae5; font-size: 0.95rem;" id="matched-sub-text">
+                கீழே உள்ள திட்டங்களுக்கான நிதி பலன்களை நேரடியாக உங்கள் வங்கிக் கணக்கில் பெறலாம்.
+              </p>
+            </div>
+            <div class="stat-group">
+              <div class="stat-item">
+                <h4 id="stat-cash-aid">₹12,000</h4>
+                <p class="t-stat-cash-label">ஆண்டு நேரடி உதவி</p>
+              </div>
+              <div class="stat-item">
+                <h4>₹5,00,000</h4>
+                <p class="t-stat-health-label">இலவச மருத்துவக் காப்பீடு</p>
+              </div>
+              <button class="btn btn-primary" onclick="readAloudResults()" title="அனைத்து தகுதிகளையும் வாசிக்க">
+                <i class="fa-solid fa-volume-high"></i> <span class="t-listen-results">வாசித்துக் கேள்</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Matched Schemes Cards -->
+          <h4 style="font-size: 1.25rem; font-weight: 800; margin-top: 24px; color: var(--primary-dark);" class="t-matched-schemes-title">
+            <i class="fa-solid fa-gifts"></i> நீங்கள் பெறக்கூடிய அரசு நலத்திட்டங்களின் பட்டியல்:
+          </h4>
+          <div class="matched-schemes-grid" id="matched-schemes-list">
+            <!-- Dynamic Cards Loaded Here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- TAB 3: TRANSPARENT CERTIFICATE APPROVAL TRACKER -->
+    <div id="tab-tracker" class="tab-pane" style="display: none;">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">
+            <i class="fa-solid fa-list-check" style="color: var(--primary);"></i>
+            <span class="t-tracker-heading">வெளிப்படையான சான்றிதழ் ஒப்புதல் & கண்காணிப்பு</span>
+          </h2>
+          <p class="section-subtitle t-tracker-sub">
+            உங்கள் விண்ணப்பம் எந்த நிலையில் உள்ளது (VAO கள ஆய்வு, RI பரிந்துரை, வட்டாட்சியர் ஒப்புதல்) என்பதை வெளிப்படையாகக் கண்காணிக்கலாம்.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-box">
+        <!-- Tracker Search Box -->
+        <div class="tracker-search-box">
+          <label style="font-weight: 700; color: #f4f4f5; font-size: 1rem;" class="t-lbl-app-num">
+            விண்ணப்ப குறிப்பு எண்ணை உள்ளிடவும் (Application Number / CAN):
+          </label>
+          <div class="aadhaar-field-group">
+            <input type="text" id="tracker-app-input" class="aadhaar-input" placeholder="விண்ணப்ப எண் (எ.கா: TN-2024-INC-84920)" value="">
+            <button class="btn btn-red" onclick="trackCertificateApplication()">
+              <i class="fa-solid fa-magnifying-glass"></i> <span class="t-btn-track-action">நிலையை அறி</span>
+            </button>
+          </div>
+          <!-- Sample One Click IDs without citizen names -->
+          <div class="sample-ids">
+            <span class="t-sample-label">மாதிரி சோதனைக் குறிப்புகள் (சோதனைக்கு மட்டும்):</span>
+            <button class="sample-btn" onclick="setAndTrack('TN-2024-INC-84920')"><i class="fa-solid fa-file-invoice"></i> வருமானச் சான்றிதழ் (TN-2024-INC-84920)</button>
+            <button class="sample-btn" onclick="setAndTrack('TN-2024-COM-19342')"><i class="fa-solid fa-id-badge"></i> சாதிச் சான்றிதழ் (TN-2024-COM-19342)</button>
+            <button class="sample-btn" onclick="setAndTrack('TN-2024-FGR-67115')"><i class="fa-solid fa-graduation-cap"></i> முதல் பட்டதாரி (TN-2024-FGR-67115)</button>
+            <button class="sample-btn" onclick="setAndTrack('TN-2024-NAT-55102')"><i class="fa-solid fa-house"></i> இருப்பிடச் சான்றிதழ் (TN-2024-NAT-55102)</button>
+          </div>
+        </div>
+
+        <!-- Application Status Result Details -->
+        <div id="tracker-result-card" style="display: none;">
+          <!-- Top info strip (Red & Black Dark Styling) -->
+          <div style="background: #18181b; border: 1.5px solid #3f3f46; border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+            <div>
+              <span id="tracker-status-badge" class="scheme-badge" style="background: #450a0a; color: #fca5a5; border-color: #7f1d1d; font-size: 0.9rem;">
+                <i class="fa-solid fa-check"></i> ஒப்புதல் அளிக்கப்பட்டது
+              </span>
+              <h3 id="tracker-cert-name" style="font-size: 1.35rem; font-weight: 800; margin: 8px 0 4px 0; color: #ffffff;">
+                வருமானச் சான்றிதழ் (Income Certificate)
+              </h3>
+              <p style="font-size: 0.9rem; color: #d4d4d8;">
+                விண்ணப்பதாரர்: <strong id="tracker-applicant-name" style="color: #fca5a5;">--</strong> | தந்தை/கணவர்: <span id="tracker-father-name" style="color: #f4f4f5;">--</span> | மாவட்டம்: <span id="tracker-district" style="color: #f4f4f5;">--</span>
+              </p>
+            </div>
+            <div style="text-align: right;">
+              <span style="font-size: 0.8rem; color: #a1a1aa;" class="t-applied-on">விண்ணப்பித்த நாள்:</span>
+              <p id="tracker-applied-date" style="font-weight: 700; color: #ffffff;">--</p>
+              <div id="tracker-action-btn-container" style="margin-top: 8px;">
+                <!-- Certificate download button rendered here -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 4-Stage Transparent Timeline Stepper -->
+          <h4 style="font-size: 1.15rem; font-weight: 700; margin-top: 32px; color: var(--primary-dark);" class="t-stages-title">
+            <i class="fa-solid fa-stairs"></i> வெளிப்படையான 4-நிலை சரிபார்ப்பு பாதை (Transparent Approval Pipeline):
+          </h4>
+          <div class="timeline-stepper" id="timeline-stepper-container">
+            <!-- Injected dynamically via JS -->
+          </div>
+
+          <!-- Transparency & SLA Notice Box -->
+          <div class="sla-box">
+            <div class="sla-info">
+              <h5 class="t-sla-title"><i class="fa-solid fa-clock"></i> சேவை உரிமை சட்ட காலக்கெடு (Right to Services SLA): 15 நாட்கள்</h5>
+              <p id="sla-status-text">உங்கள் விண்ணப்பம் 6 நாட்களில் வட்டாட்சியர் ஒப்புதல் பெற்றுள்ளது. காலக்கெடுவிற்குள் முடிந்தது.</p>
+            </div>
+            <div>
+              <span style="font-size: 0.85rem; color: #166534; font-weight: 700;">தாமதம் அல்லது லஞ்சப் புகார்: <strong>1100</strong> (முதல்வர் உதவி மையம்)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Stream / Directory of Approved Applications -->
+        <div style="margin-top: 36px; padding-top: 24px; border-top: 1px solid #27272a;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 12px;">
+            <div>
+              <h4 style="font-size: 1.15rem; font-weight: 700; color: #ffffff; margin: 0;">
+                <i class="fa-solid fa-circle-check" style="color: #22c55e;"></i>
+                <span class="t-approved-feed-title">நேரலை ஒப்புதல் தரவுத்தளம் (அண்மையில் வழங்கப்பட்ட சான்றிதழ்கள் - 98+ ஒப்புதல்கள்)</span>
+              </h4>
+              <p style="font-size: 0.85rem; color: #a1a1aa; margin: 4px 0 0 0;" class="t-approved-feed-desc">
+                அனைத்து மாவட்ட வட்டாட்சியர்களால் டிஜிட்டல் முறையில் ஒப்புதல் அளிக்கப்பட்ட சான்றிதழ்கள். ஒரே கிளிக்கில் உடனடியாக சரிபார்க்கலாம்.
+              </p>
+            </div>
+            <div style="display: flex; gap: 8px;">
+              <span id="approved-count-badge" class="scheme-badge" style="background: #1e1b4b; color: #a5b4fc; border: 1px solid #3730a3; font-size: 0.8rem;">
+                <i class="fa-solid fa-database"></i> <span id="approved-count-num">98</span> ஒப்புதல் சான்றிதழ்கள் தயார்
+              </span>
+            </div>
+          </div>
+
+          <div id="recent-approved-grid">
+            <!-- Injected dynamically by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- TAB 4: QR CERTIFICATE VERIFICATION -->
+    <div id="tab-verify" class="tab-pane" style="display: none;">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">
+            <i class="fa-solid fa-qrcode" style="color: var(--primary);"></i>
+            <span class="t-verify-heading">போலி சான்றிதழ் தடுப்பு & QR உண்மைத்தன்மை சரிபார்ப்பு</span>
+          </h2>
+          <p class="section-subtitle t-verify-sub">
+            கல்லூரிகள், நிறுவனங்கள் மற்றும் பொதுமக்கள் தமிழ்நாடு அரசு வழங்கிய சான்றிதழின் உண்மைத்தன்மையை நேரடியாக சரிபார்க்கலாம்.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-box">
+        <div style="max-width: 650px; margin: 0 auto; text-align: center;">
+          <div style="font-size: 3rem; color: var(--primary); margin-bottom: 12px;">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 8px;" class="t-qr-verify-prompt">
+            சான்றிதழ் QR எண் அல்லது சான்றிதழ் எண்ணை உள்ளிடவும்
+          </h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;" class="t-qr-verify-desc">
+            சான்றிதழின் கீழ் வலதுபுறத்தில் உள்ள QR குறியீட்டின் எண்ணை தட்டச்சு செய்து மெய்யான தமிழ்நாடு அரசு தரவுகளோடு ஒப்பிடுங்கள்.
+          </p>
+
+          <div style="display: flex; gap: 10px; justify-content: center; margin-bottom: 16px; flex-wrap: wrap;">
+            <input type="text" id="verify-cert-input" class="aadhaar-input" style="max-width: 380px; text-align: center;" placeholder="சான்றிதழ் எண் (எ.கா: CERT-TN-84920-VERIFIED)" value="">
+            <button class="btn btn-red" onclick="verifyCertificate()">
+              <i class="fa-solid fa-badge-check"></i> <span class="t-btn-verify-now">உண்மைத்தன்மையை சரிபார்</span>
+            </button>
+          </div>
+
+          <div class="sample-ids" style="justify-content: center;">
+            <span class="t-sample-qr-label">சோதனை குறியீடு:</span>
+            <button class="sample-btn" onclick="document.getElementById('verify-cert-input').value='CERT-TN-84920-VERIFIED'; verifyCertificate();">CERT-TN-84920-VERIFIED (உண்மையான சான்று)</button>
+            <button class="sample-btn" onclick="document.getElementById('verify-cert-input').value='FAKE-999-TAMIL-CERT'; verifyCertificate();">FAKE-999 (போலி சான்று சோதனை)</button>
+          </div>
+
+          <!-- Verification Result Banner -->
+          <div id="verify-result-card" style="margin-top: 28px; display: none;">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- TAB 5: SCHEMES DIRECTORY -->
+    <div id="tab-schemes" class="tab-pane" style="display: none;">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">
+            <i class="fa-solid fa-hand-holding-heart" style="color: var(--primary);"></i>
+            <span class="t-schemes-dir-title">அரசு நலத்திட்டங்கள் முழு களஞ்சியம்</span>
+          </h2>
+          <p class="section-subtitle t-schemes-dir-sub">
+            தமிழ்நாடு மற்றும் மத்திய அரசு வழங்கும் அனைத்து கல்வி, மகளிர், உழவர் மற்றும் சுகாதார திட்டங்களின் முழு விபரம்.
+          </p>
+        </div>
+        <!-- Search bar -->
+        <div style="display: flex; gap: 8px;">
+          <input type="text" id="scheme-search-input" class="chat-input" placeholder="திட்டத்தை தேடவும் (எ.கா: மகளிர், மாணவி, உழவர்...)" oninput="filterSchemesDirectory()">
+        </div>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="category-pills">
+        <button class="cat-pill active" data-cat="all" onclick="filterCategory('all', this)"><span class="t-cat-all">அனைத்தும்</span></button>
+        <button class="cat-pill" data-cat="students" onclick="filterCategory('students', this)"><i class="fa-solid fa-graduation-cap"></i> <span class="t-cat-students">மாணவர்கள் & கல்வி</span></button>
+        <button class="cat-pill" data-cat="women" onclick="filterCategory('women', this)"><i class="fa-solid fa-venus"></i> <span class="t-cat-women">மகளிர் & தாய்மை</span></button>
+        <button class="cat-pill" data-cat="farmers" onclick="filterCategory('farmers', this)"><i class="fa-solid fa-tractor"></i> <span class="t-cat-farmers">விவசாயிகள் & உழவர்</span></button>
+        <button class="cat-pill" data-cat="seniors" onclick="filterCategory('seniors', this)"><i class="fa-solid fa-person-cane"></i> <span class="t-cat-seniors">முதியோர் நலன்</span></button>
+        <button class="cat-pill" data-cat="health" onclick="filterCategory('health', this)"><i class="fa-solid fa-heart-pulse"></i> <span class="t-cat-health">சுகாதாரம் & காப்பீடு</span></button>
+        <button class="cat-pill" data-cat="business" onclick="filterCategory('business', this)"><i class="fa-solid fa-briefcase"></i> <span class="t-cat-business">தொழில்முனைவோர்</span></button>
+      </div>
+
+      <!-- Schemes Directory Grid -->
+      <div class="matched-schemes-grid" id="schemes-directory-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+  </main>
+
+
+  <!-- DIGITAL CERTIFICATE PREVIEW MODAL -->
+  <div class="modal-overlay" id="cert-modal">
+    <div class="modal-content">
+      <button class="modal-close-btn" onclick="closeCertModal()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="certificate-sheet" id="printable-certificate">
+        <div class="cert-head">
+          <div style="font-weight: 800; font-size: 0.85rem; letter-spacing: 1px; color: #065f46; margin-bottom: 4px;">தமிழ்நாடு அரசு • வருவாய்த்துறை</div>
+          <div style="font-weight: 700; font-size: 0.8rem; color: #475569;">GOVERNMENT OF TAMIL NADU • REVENUE DEPARTMENT</div>
+          <h3 id="modal-cert-title" style="margin-top: 8px;">வருமானச் சான்றிதழ் / INCOME CERTIFICATE</h3>
+          <h4 id="modal-cert-id" style="font-family: monospace; font-size: 0.95rem;">CERT-TN-84920-VERIFIED</h4>
+        </div>
+
+        <p style="font-size: 0.95rem; text-align: justify; line-height: 1.6; margin-bottom: 14px;" id="modal-cert-body">
+          தமிழ்நாடு மின்னாளுமை முகமை (TNeGA) விதிமுறைகளின்படி, கீழ்கண்ட நபரின் குடும்ப வருமானம் நேரடி கள ஆய்வு செய்யப்பட்டு சான்றளிக்கப்படுகிறது:
+        </p>
+
+        <table class="cert-table">
+          <tr>
+            <td class="label-col">விண்ணப்பதாரர் பெயர் (Applicant Name):</td>
+            <td><strong id="modal-applicant-name">சுரேஷ் குமார் (Suresh Kumar)</strong></td>
+          </tr>
+          <tr>
+            <td class="label-col">தந்தை / கணவர் பெயர் (Father's Name):</td>
+            <td id="modal-father-name">முருகன் (Murugan)</td>
+          </tr>
+          <tr>
+            <td class="label-col">ஆதார் எண் (Aadhaar Masked):</td>
+            <td id="modal-aadhaar">XXXX-XXXX-4589</td>
+          </tr>
+          <tr>
+            <td class="label-col">மாவட்டம் & வட்டம் (District & Taluk):</td>
+            <td id="modal-district-taluk">மதுரை / மதுரை தெற்கு</td>
+          </tr>
+          <tr>
+            <td class="label-col">கிராமம் (Village):</td>
+            <td id="modal-village">அவனியாபுரம்</td>
+          </tr>
+          <tr>
+            <td class="label-col">ஆண்டு வருமானம் (Annual Income):</td>
+            <td><strong id="modal-income" style="color: #065f46; font-size: 1.1rem;">₹72,000 (ரூபாய் எழுபத்திரண்டாயிரம் மட்டும்)</strong></td>
+          </tr>
+          <tr>
+            <td class="label-col">வழங்கப்பட்ட நாள் (Date of Issue):</td>
+            <td id="modal-issue-date">24 செப்டம்பர் 2024</td>
+          </tr>
+        </table>
+
+        <div class="cert-bottom">
+          <div class="qr-box">
+            <canvas id="cert-qr-canvas" class="qr-canvas"></canvas>
+            <div style="font-size: 0.72rem; color: #475569; margin-top: 4px;">அரசு போர்டலில் QR ஸ்கேன் செய்து சரிபார்க்கலாம்</div>
+            <div style="font-size: 0.68rem; font-family: monospace; color: #64748b;" id="modal-cert-hash-short">SHA-256: 7f8b9a1c...</div>
+          </div>
+          <div class="sign-box">
+            <div class="digital-seal">
+              <i class="fa-solid fa-stamp"></i> தமிழ்நாடு அரசு அதிகாரப்பூர்வ டிஜிட்டல் கையொப்பம்<br>GOVT OF TAMIL NADU DIGITAL SIGNATURE
+            </div>
+            <div class="digital-sign-detail-card">
+              <div><strong style="color: #fca5a5;">கையொப்பமிட்ட அலுவலர்:</strong> <span id="modal-signer-name">திரு. இரா. சந்திரசேகர், B.Sc., B.L.</span></div>
+              <div><strong style="color: #fca5a5;">பதவி & அலுவலகம்:</strong> <span id="modal-signer-desig">வட்டாட்சியர், மதுரை தெற்கு வட்டம்</span></div>
+              <div><strong style="color: #fca5a5;">கையொப்பமிட்ட நேரம்:</strong> <span id="modal-signer-time" style="font-family: monospace; color: #ef4444; font-weight: 700;">24-09-2024 10:45:22 AM IST</span></div>
+              <div><strong style="color: #fca5a5;">டிஜிட்டல் அட்டை (DSC ID):</strong> <span id="modal-signer-dsc" style="font-family: monospace;">DSC-TN-REV-TAH-2024-884920-F9A</span></div>
+              <div><strong style="color: #fca5a5;">சான்றளிப்பு முகமை:</strong> <span id="modal-signer-ca">National Informatics Centre (NIC-CA)</span></div>
+            </div>
+            <div style="font-size: 0.72rem; color: #64748b; margin-top: 4px;">
+              (தகவல் தொழில்நுட்ப சட்டம் 2000-ன் படி மின்னணு முறையில் கையொப்பமிடப்பட்டது - தனிக் கையொப்பம் தேவையில்லை)
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 12px; justify-content: flex-end; margin-top: 20px;">
+        <button class="btn btn-primary" onclick="window.print()">
+          <i class="fa-solid fa-print"></i> <span class="t-btn-print">சான்றிதழை அச்சிடு / PDF சேமி</span>
+        </button>
+        <button class="btn btn-outline-white" style="color: #475569; border-color: #cbd5e1;" onclick="closeCertModal()">
+          <span class="t-btn-close">மூடுக</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SCHEME DETAIL MODAL -->
+  <div class="modal-overlay" id="scheme-detail-modal">
+    <div class="modal-content" style="max-width: 680px;">
+      <button class="modal-close-btn" onclick="closeSchemeModal()"><i class="fa-solid fa-xmark"></i></button>
+      <div id="scheme-modal-body">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FLOATING TAMIL CHATBOT "சேவை தோழன்" -->
+  <button class="chatbot-launcher" onclick="toggleChatbot()">
+    <i class="fa-solid fa-comments"></i>
+    <span class="t-chat-launcher-text">சேவை தோழன் (உதவி)</span>
+  </button>
+
+  <aside class="chatbot-panel" id="chatbot-panel" aria-label="சேவை தோழன் Chatbot">
+    <div class="chatbot-header">
+      <div class="chatbot-header-left">
+        <div class="chat-avatar">
+          <i class="fa-solid fa-headset"></i>
+        </div>
+        <div>
+          <h4 style="font-size: 1rem; font-weight: 800; line-height: 1.2;">சேவை தோழன் (AI)</h4>
+          <span style="font-size: 0.75rem; opacity: 0.9;"><i class="fa-solid fa-circle" style="color: #4ade80; font-size: 0.6rem;"></i> 24/7 அரசு சேவை வழிகாட்டி</span>
+        </div>
+      </div>
+      <button style="background: none; border: none; color: white; cursor: pointer; font-size: 1.2rem;" onclick="toggleChatbot(false)">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Chat Messages Window -->
+    <div class="chat-messages" id="chat-messages-container">
+      <div class="chat-bubble bot">
+        வணக்கம்! நான் உங்கள் <strong>சேவை தோழன்</strong>. அரசு நலத்திட்டங்கள், சான்றிதழ்கள் பெறுவது, தேவையான ஆவணங்கள் மற்றும் விண்ணப்ப நிலை குறித்து என்னிடம் தமிழில் கேட்கலாம்.
+        <div>
+          <button class="chat-speech-btn" onclick="speakText('வணக்கம்! நான் உங்கள் சேவை தோழன். அரசு நலத்திட்டங்கள் மற்றும் சான்றிதழ்கள் குறித்து என்னிடம் தமிழில் கேட்கலாம்.')">
+            <i class="fa-solid fa-volume-high"></i> கேட்க
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Question Chips -->
+    <div class="chat-chips">
+      <button class="chip-btn" onclick="sendQuickPrompt('கல்லூரி மாணவிகளுக்கான ₹1000 திட்டம்')">🎓 கல்லூரி ₹1,000</button>
+      <button class="chip-btn" onclick="sendQuickPrompt('மகளிர் உரிமைத்தொகை ₹1000 யாருக்கு?')">🌸 மகளிர் உரிமை ₹1,000</button>
+      <button class="chip-btn" onclick="sendQuickPrompt('வருமான சான்றிதழ் பெற என்ன ஆவணங்கள் தேவை?')">📄 வருமான சான்றிதழ்</button>
+      <button class="chip-btn" onclick="sendQuickPrompt('விவசாயி மானியங்கள் என்னென்ன?')">🌾 உழவர் மானியங்கள்</button>
+      <button class="chip-btn" onclick="sendQuickPrompt('சான்றிதழ் தாமதமானால் புகார் செய்வது எப்படி?')">🛡️ புகார் எண்</button>
+    </div>
+
+    <!-- Chat Input Area -->
+    <div class="chat-input-area">
+      <input type="text" id="chat-user-input" class="chat-input" placeholder="உங்கள் கேள்வியை தமிழில் தட்டச்சு செய்க..." onkeypress="if(event.key === 'Enter') sendChatMessage()">
+      <button class="chat-send-btn" onclick="sendChatMessage()">
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </div>
+  </aside>
+
+
+  <!-- Portal Footer -->
+  <footer class="portal-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4 class="t-foot-col1-title">நலம் தமிழ்நாடு</h4>
+        <p style="font-size: 0.88rem; line-height: 1.5; color: #94a3b8;" class="t-foot-col1-desc">
+          ஒவ்வொரு குடிமகனுக்கும் அரசு நலத்திட்டங்களை தடையின்றி கொண்டு சேர்க்கவும், சான்றிதழ் ஒப்புதல்களை வெளிப்படையான முறையில் கண்காணிக்கவும் உருவாக்கப்பட்ட மக்கள் சேவை தளம்.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="t-foot-col2-title">அவசர & உதவி எண்கள்</h4>
+        <ul>
+          <li><i class="fa-solid fa-phone" style="color: #fef08a;"></i> <strong>1100</strong> - முதலமைச்சர் உதவி மையம்</li>
+          <li><i class="fa-solid fa-phone" style="color: #fef08a;"></i> <strong>1800 425 1333</strong> - இ-சேவை வாடிக்கையாளர் உதவி</li>
+          <li><i class="fa-solid fa-phone" style="color: #fef08a;"></i> <strong>1098</strong> - குழந்தை உதவி மையம்</li>
+          <li><i class="fa-solid fa-phone" style="color: #fef08a;"></i> <strong>181</strong> - பெண்கள் உதவி எண்</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="t-foot-col3-title">முக்கிய இணைப்புகள்</h4>
+        <ul>
+          <li><a href="https://www.tnesevai.tn.gov.in" target="_blank" rel="noopener">தமிழ்நாடு இ-சேவை மையம்</a></li>
+          <li><a href="https://kmut.tn.gov.in" target="_blank" rel="noopener">கலைஞர் மகளிர் உரிமை போர்டல்</a></li>
+          <li><a href="https://penkalvi.tn.gov.in" target="_blank" rel="noopener">புதுமைப் பெண் திட்டம்</a></li>
+          <li><a href="https://naanmudhalvan.tn.gov.in" target="_blank" rel="noopener">நான் முதல்வன் திறன் தளம்</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="t-foot-col4-title">அணுகல் & வெளிப்படைத்தன்மை</h4>
+        <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 8px;">
+          இத்தளம் பார்வை குறைபாடுள்ள மற்றும் தமிழ் மட்டுமே வாசிக்கத் தெரிந்த கிராமப்புற குடிமக்களுக்காக குரல் வாசிப்பு வசதியுடன் வடிவமைக்கப்பட்டுள்ளது.
+        </p>
+        <div style="font-size: 0.8rem; color: #4ade80;">
+          <i class="fa-solid fa-check-double"></i> சேவை உரிமை சட்டம் மற்றும் தகவல் அறியும் உரிமை சட்டத்திற்கு உட்பட்டது.
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 தமிழ்நாடு அரசு நலத்திட்டங்கள் & வெளிப்படை சான்றிதழ் சேவை தளம் • மக்கள் நலன் முதன்மை</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
